@@ -1,0 +1,13 @@
+.idea
+cgi-bin
+bitrix/cache/*
+bitrix/managed_cache/*
+bitrix/tmp/*
+bitrix/backup/*
+/test.php
+/logs/my_log.sqlite
+
+# Файлы шаблона
+bitrix/templates/*/footer.php
+bitrix/templates/*/header.php
+bitrix/templates/*/sync.ini
