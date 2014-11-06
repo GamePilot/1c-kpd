@@ -1,5 +1,5 @@
 <?
-$MESS["HTMLED_SEARCH_PLACEHOLDER"] = "Ïîèñê...";
-$MESS["HTMLED_SEARCH_NOTHING"] = "Íè÷åãî íå íàéäåíî";
-$MESS["HTMLED_SEARCH_CANCEL"] = "Îòìåíèòü ôèëüòðàöèþ";
+$MESS["HTMLED_SEARCH_PLACEHOLDER"] = "ÐŸÐ¾Ð¸ÑÐº...";
+$MESS["HTMLED_SEARCH_NOTHING"] = "ÐÐ¸Ñ‡ÐµÐ³Ð¾ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾";
+$MESS["HTMLED_SEARCH_CANCEL"] = "ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°Ñ†Ð¸ÑŽ";
 ?>

@@ -1,6 +1,6 @@
 <?
-$MESS ['COMPRESSION_MODULE_NAME'] = "Êîìïðåññèÿ";
-$MESS ['COMPRESSION_MODULE_DESC'] = "Ìîäóëü êîìïðåññèðóþùèé ñòðàíèöû ñàéòà äëÿ óñêîðåíèÿ èõ çàãðóçêè.";
-$MESS ['COMPRESS_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ Êîìïðåññèè";
-$MESS ['COMPRESS_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ Êîìïðåññèè";
+$MESS ['COMPRESSION_MODULE_NAME'] = "ÐšÐ¾Ð¼Ð¿Ñ€ÐµÑÑÐ¸Ñ";
+$MESS ['COMPRESSION_MODULE_DESC'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÐºÐ¾Ð¼Ð¿Ñ€ÐµÑÑÐ¸Ñ€ÑƒÑŽÑ‰Ð¸Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ ÑÐ°Ð¹Ñ‚Ð° Ð´Ð»Ñ ÑƒÑÐºÐ¾Ñ€ÐµÐ½Ð¸Ñ Ð¸Ñ… Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸.";
+$MESS ['COMPRESS_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ ÐšÐ¾Ð¼Ð¿Ñ€ÐµÑÑÐ¸Ð¸";
+$MESS ['COMPRESS_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ ÐšÐ¾Ð¼Ð¿Ñ€ÐµÑÑÐ¸Ð¸";
 ?>

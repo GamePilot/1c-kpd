@@ -1,14 +1,14 @@
 <?
-$MESS["soc_serv_opt_allow"] = "Ðàçðåøèòü àâòîðèçàöèþ ÷åðåç âíåøíèå ñåðâèñû";
-$MESS["soc_serv_opt_list"] = "Ñïèñîê ñåðâèñîâ:";
-$MESS["soc_serv_opt_list_title"] = "Âíåøíèå ñåðâèñû";
-$MESS["soc_serv_opt_up"] = "Âûøå";
-$MESS["soc_serv_opt_down"] = "Íèæå";
-$MESS["soc_serv_opt_settings_of"] = "Íàñòðîéêè #SERVICE#";
-$MESS["socserv_sett_common"] = "Îáùèå";
-$MESS["socserv_sett_common_title"] = "Îáùèå íàñòðîéêè äëÿ âñåõ ñàéòîâ";
-$MESS["socserv_sett_site"] = "Íàñòðîéêè äëÿ ñàéòà";
-$MESS["socserv_sett_site_apply"] = "Ïðèìåíèòü èíäèâèäóàëüíûå íàñòðîéêè äëÿ ýòîãî ñàéòà:";
-$MESS["socserv_twit_to_buzz"] = "Òðàíñëèðîâàòü òâèòû ïîëüçîâàòåëåé ñ õåøòåãîì #hash# â æèâóþ ëåíòó";
-$MESS["soc_serv_send_activity"] = "Ðàçðåøèòü îòïðàâêó àêòèâíîñòåé ïîëüçîâàòåëåé â ñîöèàëüíûå ñåòè";
+$MESS["soc_serv_opt_allow"] = "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸ÑŽ Ñ‡ÐµÑ€ÐµÐ· Ð²Ð½ÐµÑˆÐ½Ð¸Ðµ ÑÐµÑ€Ð²Ð¸ÑÑ‹";
+$MESS["soc_serv_opt_list"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑÐµÑ€Ð²Ð¸ÑÐ¾Ð²:";
+$MESS["soc_serv_opt_list_title"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ðµ ÑÐµÑ€Ð²Ð¸ÑÑ‹";
+$MESS["soc_serv_opt_up"] = "Ð’Ñ‹ÑˆÐµ";
+$MESS["soc_serv_opt_down"] = "ÐÐ¸Ð¶Ðµ";
+$MESS["soc_serv_opt_settings_of"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ #SERVICE#";
+$MESS["socserv_sett_common"] = "ÐžÐ±Ñ‰Ð¸Ðµ";
+$MESS["socserv_sett_common_title"] = "ÐžÐ±Ñ‰Ð¸Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð»Ñ Ð²ÑÐµÑ… ÑÐ°Ð¹Ñ‚Ð¾Ð²";
+$MESS["socserv_sett_site"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð»Ñ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["socserv_sett_site_apply"] = "ÐŸÑ€Ð¸Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ ÑÐ°Ð¹Ñ‚Ð°:";
+$MESS["socserv_twit_to_buzz"] = "Ð¢Ñ€Ð°Ð½ÑÐ»Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ñ‚Ð²Ð¸Ñ‚Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ñ Ñ…ÐµÑˆÑ‚ÐµÐ³Ð¾Ð¼ #hash# Ð² Ð¶Ð¸Ð²ÑƒÑŽ Ð»ÐµÐ½Ñ‚Ñƒ";
+$MESS["soc_serv_send_activity"] = "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÑƒ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÐµÐ¹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð² ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐµÑ‚Ð¸";
 ?>

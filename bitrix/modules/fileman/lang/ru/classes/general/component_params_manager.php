@@ -1,6 +1,6 @@
 <?
-$MESS ['PAR_MAN_SELECT_OTHER'] = "(другое)";
-$MESS ['PAR_MAN_SELECT_NO_VALUE'] = "(не выбрано)";
-$MESS ['PAR_MAN_SEARCH'] = "Поиск";
-$MESS ['PAR_MAN_NO_SEARCH_RESULTS'] = "Ничего не найдено";
+$MESS ['PAR_MAN_SELECT_OTHER'] = "(РґСЂСѓРіРѕРµ)";
+$MESS ['PAR_MAN_SELECT_NO_VALUE'] = "(РЅРµ РІС‹Р±СЂР°РЅРѕ)";
+$MESS ['PAR_MAN_SEARCH'] = "РџРѕРёСЃРє";
+$MESS ['PAR_MAN_NO_SEARCH_RESULTS'] = "РќРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµРЅРѕ";
 ?>

@@ -1,9 +1,9 @@
 <?php
 
-$MESS['HLBLOCK_ADMIN_ENTITY_TITLE'] = 'Èíôîáëîê';
-$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_NAME'] = 'Íàçâàíèå';
-$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_TABLE_NAME'] = 'Íàçâàíèå òàáëèöû â ÁÄ';
-$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_FIELDS_COUNT'] = 'Ïîëÿ ñóùíîñòè';
-$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_PAGE_TITLE_EDIT'] = 'Highload èíôîáëîê "#NAME#": Ðåäàêòèðîâàíèå';
-$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_PAGE_TITLE_NEW'] = 'Ñîçäàíèå íîâîãî Highload èíôîáëîêà';
-$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_ROWS_COUNT'] = 'Çàïèñè';
+$MESS['HLBLOCK_ADMIN_ENTITY_TITLE'] = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº';
+$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_NAME'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ';
+$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_TABLE_NAME'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð² Ð‘Ð”';
+$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_FIELDS_COUNT'] = 'ÐŸÐ¾Ð»Ñ ÑÑƒÑ‰Ð½Ð¾ÑÑ‚Ð¸';
+$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_PAGE_TITLE_EDIT'] = 'Highload Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº "#NAME#": Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ';
+$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_PAGE_TITLE_NEW'] = 'Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Highload Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°';
+$MESS['HLBLOCK_ADMIN_ENTITY_EDIT_ROWS_COUNT'] = 'Ð—Ð°Ð¿Ð¸ÑÐ¸';

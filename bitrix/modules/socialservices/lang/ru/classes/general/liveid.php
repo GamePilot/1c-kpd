@@ -1,6 +1,6 @@
 <?
-$MESS["socserv_liveid_note"] = "Èñïîëüçóéòå Windows Live ID äëÿ âõîäà íà ñàéò.";
+$MESS["socserv_liveid_note"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Windows Live ID Ð´Ð»Ñ Ð²Ñ…Ð¾Ð´Ð° Ð½Ð° ÑÐ°Ð¹Ñ‚.";
 $MESS["MAIN_OPTION_AUTH_LIVEID_APPLID"] = "Live ID Application ID:";
 $MESS["MAIN_OPTION_AUTH_LIVEID_SECRET"] = "Live ID Secret Key:";
-$MESS["MAIN_OPTION_COMMENT1"] = "Äëÿ èñïîëüçîâàíèÿ àâòîðèçàöèè ÷åðåç Live ID â PHP äîëæíû áûòü óñòàíîâëåíû ðàñøèðåíèÿ mhash è mcrypt.";
+$MESS["MAIN_OPTION_COMMENT1"] = "Ð”Ð»Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ñ‡ÐµÑ€ÐµÐ· Live ID Ð² PHP Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð±Ñ‹Ñ‚ÑŒ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹ Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ñ mhash Ð¸ mcrypt.";
 ?>

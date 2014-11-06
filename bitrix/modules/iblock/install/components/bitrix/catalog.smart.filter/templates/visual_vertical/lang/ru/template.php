@@ -1,9 +1,9 @@
 <?
-$MESS ['CT_BCSF_FILTER_TITLE'] = "Âûáîð ïî ïàðàìåòðàì:";
-$MESS ['CT_BCSF_FILTER_FROM'] = "Îò";
-$MESS ['CT_BCSF_FILTER_TO'] = "Äî";
-$MESS ['CT_BCSF_SET_FILTER'] = "Ïîêàçàòü";
-$MESS ['CT_BCSF_DEL_FILTER'] = "Ñáðîñèòü";
-$MESS ['CT_BCSF_FILTER_COUNT'] = "Âûáðàíî: #ELEMENT_COUNT#";
-$MESS ['CT_BCSF_FILTER_SHOW'] = "Ïîêàçàòü";
+$MESS ['CT_BCSF_FILTER_TITLE'] = "Ð’Ñ‹Ð±Ð¾Ñ€ Ð¿Ð¾ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼:";
+$MESS ['CT_BCSF_FILTER_FROM'] = "ÐžÑ‚";
+$MESS ['CT_BCSF_FILTER_TO'] = "Ð”Ð¾";
+$MESS ['CT_BCSF_SET_FILTER'] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ";
+$MESS ['CT_BCSF_DEL_FILTER'] = "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ";
+$MESS ['CT_BCSF_FILTER_COUNT'] = "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð¾: #ELEMENT_COUNT#";
+$MESS ['CT_BCSF_FILTER_SHOW'] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ";
 ?>

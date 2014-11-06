@@ -1,8 +1,8 @@
 <?
-$MESS["socserv_odnoklassniki_form_note"] = "Необходимо зарегистрироваться<a href=\"http://dev.odnoklassniki.ru/wiki/pages/viewpage.action?pageId=5668937\"> здесь</a>. Затем <a href=\"http://dev.odnoklassniki.ru/wiki/pages/viewpage.action?pageId=13992188\">заполнить форму</a> для получения идентификаторов. <br>В поле \"Redirect:\" укажите адрес: <a href=\"#URL#\">#URL#</a>.";
-$MESS["socserv_odnoklassniki_client_id"] = "ID приложения:";
-$MESS["socserv_odnoklassniki_client_secret"] = "Секретный код приложения:";
-$MESS["socserv_odnoklassniki_client_key"] = "Ключ приложения:";
-$MESS["MAIN_OPTION_COMMENT1"] = "Используйте вашу учетную запись Odnoklassniki.ru для входа на сайт.";
-$MESS["MAIN_OPTION_COMMENT1_INTRANET"] = "Войти, используя аккаунт Odnoklassniki.";
+$MESS["socserv_odnoklassniki_form_note"] = "РќРµРѕР±С…РѕРґРёРјРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ<a href=\"http://dev.odnoklassniki.ru/wiki/pages/viewpage.action?pageId=5668937\"> Р·РґРµСЃСЊ</a>. Р—Р°С‚РµРј <a href=\"http://dev.odnoklassniki.ru/wiki/pages/viewpage.action?pageId=13992188\">Р·Р°РїРѕР»РЅРёС‚СЊ С„РѕСЂРјСѓ</a> РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ. <br>Р’ РїРѕР»Рµ \"Redirect:\" СѓРєР°Р¶РёС‚Рµ Р°РґСЂРµСЃ: <a href=\"#URL#\">#URL#</a>.";
+$MESS["socserv_odnoklassniki_client_id"] = "ID РїСЂРёР»РѕР¶РµРЅРёСЏ:";
+$MESS["socserv_odnoklassniki_client_secret"] = "РЎРµРєСЂРµС‚РЅС‹Р№ РєРѕРґ РїСЂРёР»РѕР¶РµРЅРёСЏ:";
+$MESS["socserv_odnoklassniki_client_key"] = "РљР»СЋС‡ РїСЂРёР»РѕР¶РµРЅРёСЏ:";
+$MESS["MAIN_OPTION_COMMENT1"] = "РСЃРїРѕР»СЊР·СѓР№С‚Рµ РІР°С€Сѓ СѓС‡РµС‚РЅСѓСЋ Р·Р°РїРёСЃСЊ Odnoklassniki.ru РґР»СЏ РІС…РѕРґР° РЅР° СЃР°Р№С‚.";
+$MESS["MAIN_OPTION_COMMENT1_INTRANET"] = "Р’РѕР№С‚Рё, РёСЃРїРѕР»СЊР·СѓСЏ Р°РєРєР°СѓРЅС‚ Odnoklassniki.";
  ?>

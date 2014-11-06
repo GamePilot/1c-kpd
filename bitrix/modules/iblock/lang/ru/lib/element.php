@@ -1,4 +1,4 @@
 <?
-$MESS["IBLOCK_ELEMENT_ENTITY_ID_FIELD"] = "Номер";
-$MESS["IBLOCK_ELEMENT_ENTITY_NAME_FIELD"] = "Наименование";
+$MESS["IBLOCK_ELEMENT_ENTITY_ID_FIELD"] = "РќРѕРјРµСЂ";
+$MESS["IBLOCK_ELEMENT_ENTITY_NAME_FIELD"] = "РќР°РёРјРµРЅРѕРІР°РЅРёРµ";
 ?>

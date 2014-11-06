@@ -1,2 +1,2 @@
 <?php
-$MESS['HLBLOCK_ADMIN_MENU_TITLE'] = 'Highload èíôîáëîêè';
+$MESS['HLBLOCK_ADMIN_MENU_TITLE'] = 'Highload Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸';

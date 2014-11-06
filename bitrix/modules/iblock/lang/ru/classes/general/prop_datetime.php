@@ -1,3 +1,3 @@
 <?
-$MESS ['IBLOCK_PROP_DATETIME_ERROR'] = "Íåâåðíûé ôîðìàò Äàòû/Âðåìåíè";
+$MESS ['IBLOCK_PROP_DATETIME_ERROR'] = "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ Ð”Ð°Ñ‚Ñ‹/Ð’Ñ€ÐµÐ¼ÐµÐ½Ð¸";
 ?>

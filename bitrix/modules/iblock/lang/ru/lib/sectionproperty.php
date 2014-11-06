@@ -1,6 +1,6 @@
 <?
-$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_IBLOCK_ID_FIELD"] = "Èäåíòèôèêàòîð èíôîáëîêà";
-$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_SECTION_ID_FIELD"] = "Èäåíòèôèêàòîð ðàçäåëà";
-$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_PROPERTY_ID_FIELD"] = "Èäåíòèôèêàòîð ñâîéñòâà";
-$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_SMART_FILTER_FIELD"] = "Ïîêàçûâàòü â óìíîì ôèëüòðå";
+$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_IBLOCK_ID_FIELD"] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_SECTION_ID_FIELD"] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_PROPERTY_ID_FIELD"] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð°";
+$MESS["IBLOCK_SECTION_PROPERTY_ENTITY_SMART_FILTER_FIELD"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð² ÑƒÐ¼Ð½Ð¾Ð¼ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ðµ";
 ?>

@@ -1,6 +1,6 @@
 <?
-$MESS ['HLBLOCK_MODULE_NAME'] = "Highload Èíôîáëîêè";
-$MESS ['HLBLOCK_MODULE_DESCRIPTION'] = "Ìîäóëü äëÿ ðàáîòû ñ ïðîèçâîëüíûìè íàáîðàìè äàííûõ â óñëîâèÿõ âûñîêèõ íàãðóçîê.";
-$MESS ['HLBLOCK_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ Highload Èíôîáëîêè";
-$MESS ['HLBLOCK_UNINSTALL_TITLE'] = "Äåèíñòàëëÿöèÿ ìîäóëÿ Highload Èíôîáëîêè";
+$MESS ['HLBLOCK_MODULE_NAME'] = "Highload Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸";
+$MESS ['HLBLOCK_MODULE_DESCRIPTION'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð´Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ð¼Ð¸ Ð½Ð°Ð±Ð¾Ñ€Ð°Ð¼Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² ÑƒÑÐ»Ð¾Ð²Ð¸ÑÑ… Ð²Ñ‹ÑÐ¾ÐºÐ¸Ñ… Ð½Ð°Ð³Ñ€ÑƒÐ·Ð¾Ðº.";
+$MESS ['HLBLOCK_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ Highload Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸";
+$MESS ['HLBLOCK_UNINSTALL_TITLE'] = "Ð”ÐµÐ¸Ð½ÑÑ‚Ð°Ð»Ð»ÑÑ†Ð¸Ñ Ð¼Ð¾Ð´ÑƒÐ»Ñ Highload Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸";
 ?>

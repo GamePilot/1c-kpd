@@ -1,6 +1,6 @@
 <?
-$MESS["socserv_mailru_name"] = "Ìîé Ìèð";
-$MESS["socserv_openid_yandex"] = "ßíäåêñ";
-$MESS["socserv_vk_name"] = "ÂÊîíòàêòå";
-$MESS["socserv_odnoklassniki_name"] = "Îäíîêëàññíèêè";
+$MESS["socserv_mailru_name"] = "ÐœÐ¾Ð¹ ÐœÐ¸Ñ€";
+$MESS["socserv_openid_yandex"] = "Ð¯Ð½Ð´ÐµÐºÑ";
+$MESS["socserv_vk_name"] = "Ð’ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ðµ";
+$MESS["socserv_odnoklassniki_name"] = "ÐžÐ´Ð½Ð¾ÐºÐ»Ð°ÑÑÐ½Ð¸ÐºÐ¸";
 ?>

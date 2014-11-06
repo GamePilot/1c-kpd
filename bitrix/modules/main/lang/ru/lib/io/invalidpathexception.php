@@ -1,2 +1,2 @@
 <?php
-$MESS["invalid_path_exception_message"] = "Ïóòü '#PATH#' íå êîððåêòåí";
+$MESS["invalid_path_exception_message"] = "ÐŸÑƒÑ‚ÑŒ '#PATH#' Ð½Ðµ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚ÐµÐ½";

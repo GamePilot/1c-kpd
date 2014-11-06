@@ -1,2 +1,2 @@
 <?php
-$MESS["file_delete_exception_message"] = "Ïðè óäàëåíèè '#PATH#' ïðîèçîøëà îøèáêà";
+$MESS["file_delete_exception_message"] = "ÐŸÑ€Ð¸ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ð¸ '#PATH#' Ð¿Ñ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ°";

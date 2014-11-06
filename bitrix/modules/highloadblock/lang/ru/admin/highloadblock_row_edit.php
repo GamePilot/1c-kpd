@@ -1,5 +1,5 @@
 <?
 
-$MESS['HLBLOCK_ADMIN_ENTITY_ROW_EDIT_PAGE_TITLE_EDIT'] = 'Highload èíôîáëîê "#NAME#": Ðåäàêòèðîâàíèå çàïèñè ##NUM#';
-$MESS['HLBLOCK_ADMIN_ENTITY_ROW_EDIT_PAGE_TITLE_NEW'] = 'Highload èíôîáëîê "#NAME#": Ñîçäàíèå çàïèñè';
-$MESS['HLBLOCK_ADMIN_ROW_EDIT_NOT_FOUND'] = 'Èíôîðìàöèÿ î highload èíôîáëîêå íå íàéäåíà';
+$MESS['HLBLOCK_ADMIN_ENTITY_ROW_EDIT_PAGE_TITLE_EDIT'] = 'Highload Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº "#NAME#": Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸ ##NUM#';
+$MESS['HLBLOCK_ADMIN_ENTITY_ROW_EDIT_PAGE_TITLE_NEW'] = 'Highload Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº "#NAME#": Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸';
+$MESS['HLBLOCK_ADMIN_ROW_EDIT_NOT_FOUND'] = 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ highload Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐµ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°';

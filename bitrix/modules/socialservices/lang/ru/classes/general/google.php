@@ -1,7 +1,7 @@
 <?
-$MESS["socserv_google_client_id"] = "Идентификатор (Client ID):";
-$MESS["socserv_google_client_secret"] = "Секретный код (Client secret):";
-$MESS["socserv_google_note"] = "Необходимо <a href=\"http://code.google.com/apis/console\">создать приложение</a> (вкладка API Access) для получения идентификаторов. <br>В поле \"Redirect URIs\" укажите адрес: <a href=\"#URL#\">#URL#</a>.";
-$MESS["socserv_google_form_note"] = "Используйте вашу учетную запись Google для входа на сайт.";
-$MESS["socserv_google_form_note_intranet"] = "Войти, используя аккаунт Google.";
+$MESS["socserv_google_client_id"] = "РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (Client ID):";
+$MESS["socserv_google_client_secret"] = "РЎРµРєСЂРµС‚РЅС‹Р№ РєРѕРґ (Client secret):";
+$MESS["socserv_google_note"] = "РќРµРѕР±С…РѕРґРёРјРѕ <a href=\"http://code.google.com/apis/console\">СЃРѕР·РґР°С‚СЊ РїСЂРёР»РѕР¶РµРЅРёРµ</a> (РІРєР»Р°РґРєР° API Access) РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ. <br>Р’ РїРѕР»Рµ \"Redirect URIs\" СѓРєР°Р¶РёС‚Рµ Р°РґСЂРµСЃ: <a href=\"#URL#\">#URL#</a>.";
+$MESS["socserv_google_form_note"] = "РСЃРїРѕР»СЊР·СѓР№С‚Рµ РІР°С€Сѓ СѓС‡РµС‚РЅСѓСЋ Р·Р°РїРёСЃСЊ Google РґР»СЏ РІС…РѕРґР° РЅР° СЃР°Р№С‚.";
+$MESS["socserv_google_form_note_intranet"] = "Р’РѕР№С‚Рё, РёСЃРїРѕР»СЊР·СѓСЏ Р°РєРєР°СѓРЅС‚ Google.";
 ?>

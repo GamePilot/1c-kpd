@@ -1,2 +1,2 @@
 <?php
-$MESS["file_open_exception_message"] = "Íå óäàëîñü îòêðûòü ôàéë '#PATH#'";
+$MESS["file_open_exception_message"] = "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð» '#PATH#'";

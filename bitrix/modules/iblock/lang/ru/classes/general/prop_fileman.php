@@ -1,6 +1,6 @@
 <?
-$MESS["IBLOCK_PROP_FILEMAN_VIEW"] = "Îáçîð...";
-$MESS["IBLOCK_PROP_FILEMAN_ADD"] = "Äîáàâèòü";
-$MESS["IBLOCK_PROP_FILEMAN_DESCRIPTION_TITLE"] = "Îïèñàíèå çíà÷åíèÿ ñâîéñòâà";
-$MESS["IBLOCK_PROP_FILEMAN_DESCRIPTION_LABEL"] = "Îïèñàíèå";
+$MESS["IBLOCK_PROP_FILEMAN_VIEW"] = "ÐžÐ±Ð·Ð¾Ñ€...";
+$MESS["IBLOCK_PROP_FILEMAN_ADD"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+$MESS["IBLOCK_PROP_FILEMAN_DESCRIPTION_TITLE"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð°";
+$MESS["IBLOCK_PROP_FILEMAN_DESCRIPTION_LABEL"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
 ?>

@@ -2,8 +2,13 @@
 define("UPDATE_SYSTEM_VERSION", "9.0.2");
 error_reporting(E_ALL & ~E_NOTICE);
 
+include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/lib/loader.php");
+$application = \Bitrix\Main\HttpApplication::getInstance();
+$application->initializeBasicKernel();
+
 require_once($_SERVER['DOCUMENT_ROOT']."/bitrix/php_interface/dbconn.php");
 require_once($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/main/classes/".$DBType."/database.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/main/tools.php");
 
 if ($_REQUEST['lang'] == 'ru')
 	define("LANGUAGE_ID", 'ru');
@@ -25,6 +30,8 @@ if (LANGUAGE_ID == 'ru')
 	$MESS['ERROR_INVALID_COUPON'] = 'Лицензионный ключ / купон не корректен';
 	$MESS['ERROR_EMPTY_COUPON'] = 'Лицензионный ключ / купон не указан';
 	$MESS['SUCCESS_RECOVER'] = "Работоспособность сайта восстановлена";
+	$MESS['ERROR_NOT_WRITABLE'] = "Ядро продукта не доступно на запись";
+	$MESS['ERROR_NOT_FOPEN'] = "Не удалось открыть файл на запись";
 }
 else
 {
@@ -40,6 +47,8 @@ else
 	$MESS['ERROR_INVALID_COUPON'] = 'License Key / Coupon is incorrect';
 	$MESS['ERROR_EMPTY_COUPON'] = 'License Key / Coupon is not specified';
 	$MESS['SUCCESS_RECOVER'] = "Site restore completed";
+	$MESS['ERROR_NOT_WRITABLE'] = "Folder is not writable";
+	$MESS['ERROR_NOT_FOPEN'] = "File open fails";
 }
 
 $DB = new CDatabase;
@@ -107,6 +116,9 @@ function UpdateGetHTTPPage($requestDataAdd, &$errorMessage)
 	$serverPort = 80;
 
 	$proxyAddr = UpdateGetOption("update_site_proxy_addr", "");
+	$proxyPort = 0;
+	$proxyUserName = "";
+	$proxyPassword = "";
 	if (strlen($proxyAddr) > 0)
 	{
 		$proxyPort = intval(UpdateGetOption("update_site_proxy_port", ""));
@@ -277,9 +289,22 @@ function UpdateActivateCoupon($coupon, &$errorMessage)
 
 	UpdateSetOption('admin_passwordh', $arContent["V1"]);
 
-	$fp = fopen($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/admin/define.php", 'w');
-	fwrite($fp, "<"."?Define(\"TEMPORARY_CACHE\", \"".$arContent["V2"]."\");?".">");
-	fclose($fp);
+	if (is_writable($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/admin/define.php"))
+	{
+		if ($fp = fopen($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/admin/define.php", 'w'))
+		{
+			fwrite($fp, "<"."?Define(\"TEMPORARY_CACHE\", \"".$arContent["V2"]."\");?".">");
+			fclose($fp);
+		}
+		else
+		{
+			$errorMessage .= $MESS['ERROR_NOT_FOPEN'].". ";
+		}
+	}
+	else
+	{
+		$errorMessage .= $MESS['ERROR_NOT_WRITABLE'].". ";
+	}
 
 	if (isset($arContent["DATE_TO_SOURCE"]))
 		UpdateSetOption("~support_finish_date", $arContent["DATE_TO_SOURCE"]);
@@ -289,9 +314,22 @@ function UpdateActivateCoupon($coupon, &$errorMessage)
 		UpdateSetOption("PARAM_MAX_USERS", intval($arContent["MAX_USERS"]));
 	if (isset($arContent["ISLC"]))
 	{
-		$fp = fopen($_SERVER['DOCUMENT_ROOT']."/bitrix/license_key.php", "wb");
-		fputs($fp, '<'.'?$LICENSE_KEY = "'.htmlspecialchars($coupon).'";?'.'>');
-		fclose($fp);
+		if (is_writable($_SERVER['DOCUMENT_ROOT']."/bitrix/license_key.php"))
+		{
+			if ($fp = fopen($_SERVER['DOCUMENT_ROOT']."/bitrix/license_key.php", "wb"))
+			{
+				fputs($fp, '<'.'?$LICENSE_KEY = "'.EscapePHPString($coupon).'";?'.'>');
+				fclose($fp);
+			}
+			else
+			{
+				$errorMessage .= $MESS['ERROR_NOT_FOPEN'].". ";
+			}
+		}
+		else
+		{
+			$errorMessage .= $MESS['ERROR_NOT_WRITABLE'].". ";
+		}
 	}
 
 	return true;
@@ -301,7 +339,7 @@ function UpdateIsAdmin($login, $password)
 {
 	global $DB;
 
-	if (strlen($login) <= 0 || strlen($password) <= 0)
+	if (!is_string($login) || $login == '' || !is_string($password) || $password == '')
 		return false;
 
 	$dbUser = $DB->Query(
@@ -344,7 +382,7 @@ header("Content-Type: text/html; charset=windows-1251");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
-	if (strlen($_POST["autoActivateCoupon"]) > 0)
+	if (is_string($_POST["autoActivateCoupon"]) && $_POST["autoActivateCoupon"] <> '')
 	{
 		$autoActivateCoupon = $_POST["autoActivateCoupon"];
 		if (preg_match("#^[A-Z0-9]{3}-[A-Z0-9]{10}-[A-Z0-9]{10}$#i", $autoActivateCoupon))
@@ -361,9 +399,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 		die();
 	}
 
-	if (strlen($_POST["reincarnate"]) > 0)
+	if (is_string($_POST["reincarnate"]) && $_POST["reincarnate"] <> '')
 	{
-		if (strlen($_POST["coupon"]) <= 0)
+		if (!is_string($_POST["coupon"]) || $_POST["coupon"] == '')
 		{
 			$errorMessage .= $MESS['ERROR_EMPTY_COUPON'].". ";
 		}
@@ -414,7 +452,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 	?>
 	<form method="POST" action="/bitrix/coupon_activation.php">
-	<input type="hidden" name="lang" value="<?= htmlspecialchars(LANGUAGE_ID) ?>" />
+	<input type="hidden" name="lang" value="<?= htmlspecialcharsbx(LANGUAGE_ID) ?>" />
 
 	<table width="100%" cellspacing="0" cellpadding="0" border="0">
 		<tr>
@@ -454,7 +492,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 										<table cellpadding="0" cellspacing="0" border="0" class="edit-table">
 											<tr>
 												<td width="40%" align="right"><?= $MESS['LOGIN_PROMT'] ?>:</td>
-												<td><input type="text" name="login" value="<?= htmlspecialchars($_POST["login"]) ?>" size="40"></td>
+												<td><input type="text" name="login" value="<?= htmlspecialcharsbx(strval($_POST["login"])) ?>" size="40"></td>
 											</tr>
 											<tr>
 												<td width="40%" align="right"><?= $MESS['PASSWORD_PROMT'] ?>:</td>
@@ -462,7 +500,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 											</tr>
 											<tr>
 												<td width="40%" align="right"><?= $MESS['COUPON_PROMT'] ?>:</td>
-												<td><input type="text" name="coupon" value="<?= htmlspecialchars($_POST["coupon"]) ?>" size="40"></td>
+												<td><input type="text" name="coupon" value="<?= htmlspecialcharsbx(strval($_POST["coupon"])) ?>" size="40"></td>
 											</tr>
 										</table>
 										</div></div>

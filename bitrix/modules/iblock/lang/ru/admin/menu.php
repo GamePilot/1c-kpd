@@ -1,15 +1,15 @@
 <?
-$MESS["IBLOCK_MENU_ITYPE"] = "Òèïû èíôîáëîêîâ";
-$MESS["IBLOCK_MENU_EXPORT"] = "Ýêñïîðò";
-$MESS["IBLOCK_MENU_EXPORT_ALT"] = "Ýêñïîðò äàííûõ â ôîðìàò CSV";
-$MESS["IBLOCK_MENU_IMPORT"] = "Èìïîðò";
-$MESS["IBLOCK_MENU_IMPORT_ALT"] = "Èìïîðò äàííûõ â ôîðìàò CSV";
-$MESS["IBLOCK_MENU_ALL_EL"] = "Âñå ýëåìåíòû";
-$MESS["IBLOCK_MENU_ALL_OTH"] = "Ïðî÷èå...";
-$MESS["IBLOCK_MENU_ALL_OTH_TITLE"] = "Ïîëíûé ñïèñîê ðàçäåëîâ";
-$MESS["IBLOCK_MENU_SEC_EL"] = "Ýëåìåíòû äàííîé ãðóïïû";
-$MESS["IBLOCK_MENU_ITYPE_TITLE"] = "Òèïû èíôîðìàöèîííûõ áëîêîâ";
-$MESS["IBLOCK_MENU_SETTINGS_TITLE"] = "Íàñòðîéêà èíôîðìàöèîííûõ áëîêîâ";
-$MESS["IBLOCK_MENU_ELEMENTS"] = "Ýëåìåíòû";
-$MESS["IBLOCK_MENU_SEPARATOR"] = "Èíôîáëîêè";
+$MESS["IBLOCK_MENU_ITYPE"] = "Ð¢Ð¸Ð¿Ñ‹ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²";
+$MESS["IBLOCK_MENU_EXPORT"] = "Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚";
+$MESS["IBLOCK_MENU_EXPORT_ALT"] = "Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ CSV";
+$MESS["IBLOCK_MENU_IMPORT"] = "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚";
+$MESS["IBLOCK_MENU_IMPORT_ALT"] = "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ CSV";
+$MESS["IBLOCK_MENU_ALL_EL"] = "Ð’ÑÐµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹";
+$MESS["IBLOCK_MENU_ALL_OTH"] = "ÐŸÑ€Ð¾Ñ‡Ð¸Ðµ...";
+$MESS["IBLOCK_MENU_ALL_OTH_TITLE"] = "ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
+$MESS["IBLOCK_MENU_SEC_EL"] = "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð´Ð°Ð½Ð½Ð¾Ð¹ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹";
+$MESS["IBLOCK_MENU_ITYPE_TITLE"] = "Ð¢Ð¸Ð¿Ñ‹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð²";
+$MESS["IBLOCK_MENU_SETTINGS_TITLE"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð²";
+$MESS["IBLOCK_MENU_ELEMENTS"] = "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹";
+$MESS["IBLOCK_MENU_SEPARATOR"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸";
 ?>

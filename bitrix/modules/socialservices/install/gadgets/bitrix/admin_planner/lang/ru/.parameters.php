@@ -1,4 +1,4 @@
 <?
-$MESS["GD_PROFILE_PORTAL_URI"] = "Àäðåñ óäàëåííîãî ïîðòàëà";
+$MESS["GD_PROFILE_PORTAL_URI"] = "ÐÐ´Ñ€ÐµÑ ÑƒÐ´Ð°Ð»ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ñ€Ñ‚Ð°Ð»Ð°";
 $MESS["GD_PROFILE_APP_ID"] = "Application ID";
 $MESS["GD_PROFILE_APP_SECRET"] = "Application Secret";

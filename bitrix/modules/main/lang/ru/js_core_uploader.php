@@ -1,11 +1,11 @@
 <?
-$MESS["UPLOADER_INPUT_IS_NOT_DEFINED"] = "Íå óêàçàíî ïîëå ââîäà.";
-$MESS["UPLOADER_ACTION_URL_NOT_DEFINED"] = "Íå óêàçàí ïóòü äëÿ çàãðóçêè ôàéëîâ.";
-$MESS["FILE_BAD_SIZE"] = "Ïðåâûøåí ìàêñèìàëüíûé ðàçìåð çàãðóæàåìîãî ôàéëà";
-$MESS["FILE_SIZE_b"] = "Á";
-$MESS["FILE_SIZE_Kb"] = "ÊÁ";
-$MESS["FILE_SIZE_Mb"] = "ÌÁ";
-$MESS["FILE_SIZE_Gb"] = "ÃÁ";
-$MESS["FILE_SIZE_Tb"] = "ÒÁ";
-$MESS["UPLOADER_UPLOADING_ERROR"] = "Îøèáêà çàãðóçêè.";
+$MESS["UPLOADER_INPUT_IS_NOT_DEFINED"] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½Ð¾ Ð¿Ð¾Ð»Ðµ Ð²Ð²Ð¾Ð´Ð°.";
+$MESS["UPLOADER_ACTION_URL_NOT_DEFINED"] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½ Ð¿ÑƒÑ‚ÑŒ Ð´Ð»Ñ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ñ„Ð°Ð¹Ð»Ð¾Ð².";
+$MESS["FILE_BAD_SIZE"] = "ÐŸÑ€ÐµÐ²Ñ‹ÑˆÐµÐ½ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð·Ð°Ð³Ñ€ÑƒÐ¶Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð°";
+$MESS["FILE_SIZE_b"] = "Ð‘";
+$MESS["FILE_SIZE_Kb"] = "ÐšÐ‘";
+$MESS["FILE_SIZE_Mb"] = "ÐœÐ‘";
+$MESS["FILE_SIZE_Gb"] = "Ð“Ð‘";
+$MESS["FILE_SIZE_Tb"] = "Ð¢Ð‘";
+$MESS["UPLOADER_UPLOADING_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸.";
 ?>

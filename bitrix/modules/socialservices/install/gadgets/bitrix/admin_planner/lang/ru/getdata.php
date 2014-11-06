@@ -1,8 +1,8 @@
 <?
-$MESS["GD_PLANNER_TASKS"] = "Çàäà÷è";
-$MESS["GD_PLANNER_TASKS_CREATOR"] = "Ïîñòàíîâùèê";
-$MESS["GD_PLANNER_EVENTS"] = "Ñîáûòèÿ";
-$MESS["GD_PLANNER_EVENT_DATE"] = "Äàòà è âðåìÿ íà÷àëà";
-$MESS["GD_PLANNER_AUTHORIZE"] = "Àâòîðèçîâàòüñÿ";
-$MESS["GD_PLANNER_URI_PORTAL_INPUT"] = "Ââåäèòå URL âíåøíåãî ïîðòàëà:";
-$MESS["GD_PLANNER_EMPTY_DATA"] = "Â íàñòîÿùåå âðåìÿ íåò àêòèâíûõ çàäà÷ è ñîáûòèé.";
+$MESS["GD_PLANNER_TASKS"] = "Ð—Ð°Ð´Ð°Ñ‡Ð¸";
+$MESS["GD_PLANNER_TASKS_CREATOR"] = "ÐŸÐ¾ÑÑ‚Ð°Ð½Ð¾Ð²Ñ‰Ð¸Ðº";
+$MESS["GD_PLANNER_EVENTS"] = "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ñ";
+$MESS["GD_PLANNER_EVENT_DATE"] = "Ð”Ð°Ñ‚Ð° Ð¸ Ð²Ñ€ÐµÐ¼Ñ Ð½Ð°Ñ‡Ð°Ð»Ð°";
+$MESS["GD_PLANNER_AUTHORIZE"] = "ÐÐ²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ";
+$MESS["GD_PLANNER_URI_PORTAL_INPUT"] = "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ URL Ð²Ð½ÐµÑˆÐ½ÐµÐ³Ð¾ Ð¿Ð¾Ñ€Ñ‚Ð°Ð»Ð°:";
+$MESS["GD_PLANNER_EMPTY_DATA"] = "Ð’ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð²Ñ€ÐµÐ¼Ñ Ð½ÐµÑ‚ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ñ… Ð·Ð°Ð´Ð°Ñ‡ Ð¸ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹.";

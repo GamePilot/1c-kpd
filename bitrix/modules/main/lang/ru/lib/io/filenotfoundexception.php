@@ -1,2 +1,2 @@
 <?php
-$MESS["file_not_found_exception_message"] = "Ïóòü '#PATH#' íå íàéäåí";
+$MESS["file_not_found_exception_message"] = "ÐŸÑƒÑ‚ÑŒ '#PATH#' Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½";

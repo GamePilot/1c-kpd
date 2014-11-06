@@ -1,8 +1,8 @@
 <?php
-$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD_INVALID'] = 'Íàçâàíèå ñóùíîñòè äîëæíî íà÷èíàòüñÿ ñ áîëüøîé áóêâû è ìîæåò ñîäåðæàòü òîëüêî áóêâû è öèôðû';
-$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_TABLE_NAME_FIELD'] = 'Íàçâàíèå òàáëèöû â áàçå äàííûõ';
-$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD'] = 'Íàçâàíèå ñóùíîñòè';
-$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD_REGEXP_INVALID'] = 'Íàçâàíèå ñóùíîñòè äîëæíî íà÷èíàòüñÿ ñ çàãëàâíîé áóêâû è ñîñòîÿòü òîëüêî èç ëàòèíñêèõ áóêâ è öèôð';
-$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_TABLE_NAME_FIELD_REGEXP_INVALID'] = 'Íàçâàíèå òàáëèöû äîëæíî ñîñòîÿòü òîëüêî èç ñòðî÷íûõ ëàòèíñêèõ áóêâ, öèôð è çíàêà ïîä÷åðêèâàíèÿ';
-$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD_LENGTH_INVALID'] = 'Ìàêñèìàëüíàÿ äëèíà Íàçâàíèÿ ñóùíîñè 100 ñèìâîëîâ';
-$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_TABLE_NAME_FIELD_LENGTH_INVALID'] = 'Ìàêñèìàëüíàÿ äëèíà Íàçâàíèÿ òàáëèöû 64 ñèìâîëà';
+$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD_INVALID'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÑƒÑ‰Ð½Ð¾ÑÑ‚Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð½Ð°Ñ‡Ð¸Ð½Ð°Ñ‚ÑŒÑÑ Ñ Ð±Ð¾Ð»ÑŒÑˆÐ¾Ð¹ Ð±ÑƒÐºÐ²Ñ‹ Ð¸ Ð¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð±ÑƒÐºÐ²Ñ‹ Ð¸ Ñ†Ð¸Ñ„Ñ€Ñ‹';
+$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_TABLE_NAME_FIELD'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…';
+$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÑƒÑ‰Ð½Ð¾ÑÑ‚Ð¸';
+$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD_REGEXP_INVALID'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÑƒÑ‰Ð½Ð¾ÑÑ‚Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð½Ð°Ñ‡Ð¸Ð½Ð°Ñ‚ÑŒÑÑ Ñ Ð·Ð°Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ Ð±ÑƒÐºÐ²Ñ‹ Ð¸ ÑÐ¾ÑÑ‚Ð¾ÑÑ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¸Ð· Ð»Ð°Ñ‚Ð¸Ð½ÑÐºÐ¸Ñ… Ð±ÑƒÐºÐ² Ð¸ Ñ†Ð¸Ñ„Ñ€';
+$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_TABLE_NAME_FIELD_REGEXP_INVALID'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ð¾ ÑÐ¾ÑÑ‚Ð¾ÑÑ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¸Ð· ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ñ‹Ñ… Ð»Ð°Ñ‚Ð¸Ð½ÑÐºÐ¸Ñ… Ð±ÑƒÐºÐ², Ñ†Ð¸Ñ„Ñ€ Ð¸ Ð·Ð½Ð°ÐºÐ° Ð¿Ð¾Ð´Ñ‡ÐµÑ€ÐºÐ¸Ð²Ð°Ð½Ð¸Ñ';
+$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_NAME_FIELD_LENGTH_INVALID'] = 'ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð´Ð»Ð¸Ð½Ð° ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ñ ÑÑƒÑ‰Ð½Ð¾ÑÐ¸ 100 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²';
+$MESS['HIGHLOADBLOCK_HIGHLOAD_BLOCK_ENTITY_TABLE_NAME_FIELD_LENGTH_INVALID'] = 'ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð´Ð»Ð¸Ð½Ð° ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ 64 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°';
