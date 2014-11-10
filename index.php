@@ -64,6 +64,27 @@ $APPLICATION->SetTitle('1С КПД');
 	</div>
 </div>
 <hr>
+<!-- none -->
+<div class="container boxes form1">
+	<div class="content">
+		<p class="title">Получите в подарок новую книгу<br /> <span>«1С:Документооборот. 200 вопросов и ответов»</span> <br />или <span>просмотр записи мини-семинара</span><br /> по 1С:Документооборот для специалистов</p>
+		<form action="/ajax/form_send.php" method="post" data-type="form_send" enctype="application/x-www-form-urlencoded">
+			<div class="left">
+				<input type="text" name="name" placeholder="Имя">
+				<input type="text" name="phone" placeholder="Телефон">
+				<input type="text" name="email" placeholder="E-mail">
+			</div>
+			<div class="right">
+				<p>Удобный для Вас формат обучения:</p>
+				<input value="Корпоративное обучение" type="radio" name="format" checked>Корпоративное обучение<br>
+				<input value="Курсы в Учебном центре 1С-КПД" type="radio" name="format">Курсы в Учебном центре 1С-КПД<br />
+				<a id="submit" href="#" class="button">Оставить заявку</a>
+			</div>
+		</form>
+	</div>
+</div>
+<hr>
+<!-- none -->
 
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');

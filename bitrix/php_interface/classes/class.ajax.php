@@ -32,11 +32,11 @@ class ajax
 			return false;
 		
 		switch ($this->type){
-			case "contact_form":
-				$this->send_contact_form();
+			case "form_send":
+				$this->form_send();
 				break;
 			case "on_line_call_form":
-				$this->send_call_form();
+				//$this->send_call_form();
 				break;
 			default:
 				$this->error = "Не определен тип запроса";
@@ -45,6 +45,42 @@ class ajax
 		}
 
 
+		return true;
+	}
+	
+	public function form_send()
+	{
+		// Проверка полей
+		$error = array();
+		$arFieldsError = array(
+			"name" => "",
+			"phone" => "",
+			"email" => ""
+		);
+		foreach($arFieldsError as $key => $value){
+			if(empty($this->request[$key])){
+				$error[] = $value;
+				$this->error_keys[$key] = $arFieldsError[$key];
+			}
+		}		
+		if(!empty($error)){
+			$this->error = "Пожалуйста, заполните обязательные поля";
+			$this->send_ajax();
+			return false;
+		}
+
+		// Отправка на емаил
+		$messID = CEvent::Send("FORM_KPD", "s1", $this->request, "N");
+		if($messID > 0){
+			$this->mess = "Ваша заявка отправлена";
+			$this->send_ajax();
+		} else {
+			$this->error = "Заявку отправить не удалось";
+			$this->send_ajax();
+			return false;
+		}
+		
+		
 		return true;
 	}
 

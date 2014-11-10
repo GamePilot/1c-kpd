@@ -30,6 +30,38 @@ $(document).ready(function() {
 		}
 	});
 
+	// Отправка формы
+	$("#submit").click(function(e){
+		var ajax = {};
+		var form = $(this).parents("form");
+		var type = form.attr("data-type");
+		form.ajaxSubmit({
+			data: {
+				type  : type
+			},
+			dataType: "json",
+			success: function(data) {
+				ajax = data;
+				if(ajax.mess.length > 0)
+				{
+					sweetAlert("Спасибо!", ajax.mess, "success");
+				} 
+				else if (ajax.error.length > 0)
+				{
+					// Сообщения об ошибках
+					sweetAlert("Извините", ajax.error, "error");
+				}
+			},
+			error: function(){
+				ajax.error = "Запрос выполнен неудачно";
+			},
+			complete: function(){
+				//location.reload();
+			}
+		});
+
+		e.preventDefault();
+	});
 
 
 }); // end ready()

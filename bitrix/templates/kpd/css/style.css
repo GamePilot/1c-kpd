@@ -31,6 +31,11 @@ body {font-size: 13px; line-height: 18px; margin:0; padding:0; font-weight:norma
 hr { background: url("../images/teni.png") top center no-repeat; border: none; height: 19px;}
 h1 { color:#58585a; font-size: 33px; line-height: 34px; text-align: center; margin-bottom: 10px;}
 a.button { font-size: 15px; line-height: 36px; height: 36px; color: #ffffff; font-weight: 700; background: #1C9FD8; padding: 0 15px; margin: 0; border: 1px solid #198FC2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; text-decoration: none; display: inline-block;}
+a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
+
+
+
+
 
 
 
@@ -55,7 +60,58 @@ a.button { font-size: 15px; line-height: 36px; height: 36px; color: #ffffff; fon
 
 /*-- Три версии продукта --*/
 .boxes.ver-prod { padding: 10px;}
-.ver-prod h1 {color: #069edb;}
+.ver-prod h1 {color: #069edb; margin: 20px 0 25px;}
+.ver-prod .content { background: #F6F6F6; padding: 30px 20px 35px;}
+
+.ver-prod .content .box { background: #fff; border: 1px solid #E6E6E6; margin-bottom: 20px; width: 305px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 20px 15px; vertical-align: top;}
+.ver-prod .content .box.b1 {}
+.ver-prod .content .box.b1 img, .ver-prod .content .box.b2 img, .ver-prod .content .box.b3 img { position: absolute; margin: -22px 0 0 190px;}
+.ver-prod .content .box.b2 { margin: 0 0 0 -4px; border-left: 1px dashed #E5E5E5;}
+.ver-prod .content .box.b3 { margin-left: 19px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+.ver-prod .content .box p.title { font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; text-transform: uppercase; margin: 10px 0 15px; height: auto;}
+.ver-prod .content .box p { color: #89898c; margin-bottom: 10px; height: 70px;}
+.ver-prod .content .box span { font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; line-height: 47px; height: 47px; display: inline-block;}
+.ver-prod .content .box a.button { float: right;}
+.ver-prod .content .box.b3:hover { border-color: #1C9FD9; -webkit-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); -moz-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); box-shadow:0 0 13px rgba(82, 168, 236, 0.6); cursor: pointer;}
+.ver-prod .content img.line { margin: 0 auto; display: block;}
+.ver-prod .content .button { text-align: center; margin:5px 0 0;}
+.ver-prod .phone p { font-size: 13px; color:#89898c; line-height: 24px; text-align: center; margin:20px 0 10px;}
+.ver-prod .phone p img { margin: 0 10px 0 25px;}
+.ver-prod .phone p span { font-size: 22px; line-height: 24px; color:#58585a;}
+.ver-prod .phone p span strong { font-weight: 700;}
+
+/*-- form1 --*/
+.container.form1 { padding: 10px;}
+.form1 .content { background: #F6F6F6;}
+.form1 .content p.title { font-size: 15px; line-height: 22px; color: #58585a; text-align: center; padding: 25px 0 20px;}
+.form1 .content p.title span { color: #069edb; font-weight: 700;}
+
+.form1 .content form { width: 565px; margin: 0 auto; padding-bottom: 40px;}
+.form1 .content form .left, .form1 .content form .right { display: inline-block; width: 280px; vertical-align: top;}
+.form1 .content form .left {}
+.form1 .content form .left input { color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: center; height: 30px; line-height: 30px; width: 228px; display: block; margin-top: 16px;}
+.form1 .content form .right {color: #58585a;}
+.form1 .content form .right p { color: #58585a; font-weight: 700; margin-bottom: 10px;}
+.form1 .content form .right input { margin: 10px 15px 5px 0;}
+.form1 .content form .right a.button { margin: 25px 0 0 35px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,7 +149,7 @@ a.button { font-size: 15px; line-height: 36px; height: 36px; color: #ffffff; fon
 .footer p { text-align: right; font-size: 13px; line-height: 48px; color: #c8c8c9; text-transform: uppercase; display: inline-block; width: 135px; vertical-align: middle;}
 
 /*-- Наверх --*/
-.top-content { position: relative; left: 1020px; display: none}
+.top-content { position: relative; left: 1020px;}
 .top-content a { display: inline-block; width: 64px; height: 64px; position: fixed; bottom: 120px;}
 .top-content a img {}
 
