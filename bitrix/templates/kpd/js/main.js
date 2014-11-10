@@ -14,6 +14,21 @@ $(document).ready(function() {
 			scrollTop: 0
 		}, delay);
 	});
+	
+	// Меню
+	$("ul.menu a").click(function(){
+		var id;
+		var position;
+		id = $(this).attr("href").replace("#", "");
+		position = $("div#" + id).position();
+		if(position !== undefined){
+			$('body, html').animate({
+				scrollTop: position.top
+			}, delay);
+		} else {
+			return false;
+		}
+	});
 
 
 
