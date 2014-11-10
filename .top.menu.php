@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Покупка", 
+		"#pokupka", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Внедрение", 
+		"#vnedrenie", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обучение", 
+		"#obuchenie", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"DocStore", 
+		"#docstore", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"SaaS", 
+		"#saas", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сопровождение", 
+		"#soprovozhdenie", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"#kontakty", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
