@@ -78,13 +78,44 @@ $APPLICATION->SetTitle('1С КПД');
 				<p>Удобный для Вас формат обучения:</p>
 				<input value="Корпоративное обучение" type="radio" name="format" checked>Корпоративное обучение<br>
 				<input value="Курсы в Учебном центре 1С-КПД" type="radio" name="format">Курсы в Учебном центре 1С-КПД<br />
-				<a id="submit" href="#" class="button">Оставить заявку</a>
+				<a href="#" class="button">Оставить заявку</a>
 			</div>
 		</form>
 	</div>
 </div>
 <hr>
 <!-- none -->
+<div class="container boxes form2">
+	<div class="content">
+		<p class="title">Получите в подарок</p>
+		<p>«1C:Электронное обучение. Работа с прикладным решением «1C:Документооборот» (облако)</p>
+		<form action="/ajax/form_send.php" method="post" data-type="receive_gift" enctype="application/x-www-form-urlencoded">
+			<input type="text" name="name" placeholder="Имя">
+			<input type="text" name="email" class="email" placeholder="E-mail">
+			<a href="#" class="button">Оставить заявку</a>
+		</form>
+	</div>
+</div>
+<hr>
+<!-- none -->
+<div class="container boxes form3">
+	<div class="content">
+		<p>Оставьте заявку и мы свяжемся с Вами в ближайшее время</p>
+		<form action="/ajax/form_send.php" method="post" data-type="contact_form" enctype="application/x-www-form-urlencoded">
+			<input type="text" name="name" placeholder="Имя">
+			<input type="text" name="phone" placeholder="Телефон">
+			<input type="text" name="email" placeholder="E-mail">
+			<select name="tarif">
+				<option selected value="Тариф 1">Тариф 1</option>
+				<option value="Тариф 2">Тариф 2</option>
+				<option value="Тариф 3">Тариф 3</option>
+			</select>
+			<textarea name="text" placeholder="Комментарий"></textarea>
+			<a href="#" class="button">Отправить заявку</a>
+		</form>
+	</div>
+</div>
+
 
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');

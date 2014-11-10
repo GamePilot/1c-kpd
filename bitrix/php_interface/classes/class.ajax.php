@@ -32,11 +32,14 @@ class ajax
 			return false;
 		
 		switch ($this->type){
-			case "form_send":
+			case "form_send": // Получите в подарок новую книгу
 				$this->form_send();
 				break;
-			case "on_line_call_form":
-				//$this->send_call_form();
+			case "receive_gift": // Получите в подарок
+				$this->receive_gift();
+				break;
+			case "contact_form": // Оставьте заявку и мы свяжемся с Вами в ближайшее время
+				$this->contact_form();
 				break;
 			default:
 				$this->error = "Не определен тип запроса";
@@ -47,7 +50,12 @@ class ajax
 
 		return true;
 	}
-	
+
+
+	/**
+	 * Получите в подарок новую книгу
+	 * @return bool
+	 */
 	public function form_send()
 	{
 		// Проверка полей
@@ -81,6 +89,86 @@ class ajax
 		}
 		
 		
+		return true;
+	}
+
+	/**
+	 * Получите в подарок
+	 * @return bool
+	 */
+	public function receive_gift()
+	{
+		// Проверка полей
+		$error = array();
+		$arFieldsError = array(
+			"name" => "",
+			"email" => ""
+		);
+		foreach($arFieldsError as $key => $value){
+			if(empty($this->request[$key])){
+				$error[] = $value;
+				$this->error_keys[$key] = $arFieldsError[$key];
+			}
+		}
+		if(!empty($error)){
+			$this->error = "Пожалуйста, заполните обязательные поля";
+			$this->send_ajax();
+			return false;
+		}
+
+		// Отправка на емаил
+		$messID = CEvent::Send("FORM_KPD_2", "s1", $this->request, "N");
+		if($messID > 0){
+			$this->mess = "Ваша заявка отправлена";
+			$this->send_ajax();
+		} else {
+			$this->error = "Заявку отправить не удалось";
+			$this->send_ajax();
+			return false;
+		}
+
+
+		return true;
+	}
+
+	/**
+	 * Оставьте заявку и мы свяжемся с Вами в ближайшее время
+	 * @return bool
+	 */
+	public function contact_form()
+	{
+		// Проверка полей
+		$error = array();
+		$arFieldsError = array(
+			"name" => "",
+			"phone" => "",
+			"email" => "",
+			"text" => ""
+		);
+		foreach($arFieldsError as $key => $value){
+			if(empty($this->request[$key])){
+				$error[] = $value;
+				$this->error_keys[$key] = $arFieldsError[$key];
+			}
+		}
+		if(!empty($error)){
+			$this->error = "Пожалуйста, заполните обязательные поля";
+			$this->send_ajax();
+			return false;
+		}
+
+		// Отправка на емаил
+		$messID = CEvent::Send("SEND_CONTACT_FORM", "s1", $this->request, "N");
+		if($messID > 0){
+			$this->mess = "Ваша заявка отправлена";
+			$this->send_ajax();
+		} else {
+			$this->error = "Заявку отправить не удалось";
+			$this->send_ajax();
+			return false;
+		}
+
+
 		return true;
 	}
 

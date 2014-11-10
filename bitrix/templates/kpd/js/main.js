@@ -31,7 +31,7 @@ $(document).ready(function() {
 	});
 
 	// Отправка формы
-	$("#submit").click(function(e){
+	$(".button").click(function(e){
 		var ajax = {};
 		var form = $(this).parents("form");
 		var type = form.attr("data-type");
