@@ -134,7 +134,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .form3 .content form a.button { margin: 15px 0;}
 
 /*-- none --*/
-.modal { width: 435px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; border: 1px solid #E7E7E7; margin: 50px; padding: 20px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.modal { width: 435px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; padding: 20px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
 .modal a.close { background: url("../images/icon-close.png") 0 0 no-repeat; width: 19px; height: 18px; display: inline-block; float: right;}
 .modal a.close span { display: none;}
 .modal p { color: #89898c; font-size: 13px; line-height: 18px;}
@@ -148,7 +148,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .modal form p.info { color: #89898c; font-size: 11px; line-height: 15px; width: 230px;}
 .modal form p.info-b { font-size: 13px; color: #58585a; border-top: 1px solid #DEDEDE; margin-top: 15px; padding-top: 10px;}
 .modal form p.info-b span { color: red;}
-.modal form a.button { margin: 30px 0 10px;}
+.modal form a.button.modal { margin: 30px 0 10px; width: auto;}
 
 /*-- SlideShow --*/
 #slideshow {margin:0 auto; width:999px; height:314px; position:relative; margin-bottom: 20px; margin-top: 5px;}
@@ -183,7 +183,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .footer p { text-align: right; font-size: 13px; line-height: 48px; color: #c8c8c9; text-transform: uppercase; display: inline-block; width: 135px; vertical-align: middle;}
 
 /*-- Наверх --*/
-.top-content { position: relative; left: 1020px;}
+.top-content { position: relative; left: 1020px; display: none}
 .top-content a { display: inline-block; width: 64px; height: 64px; position: fixed; bottom: 120px;}
 .top-content a img {}
 

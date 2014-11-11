@@ -78,7 +78,7 @@ $APPLICATION->SetTitle('1С КПД');
 				<p>Удобный для Вас формат обучения:</p>
 				<input value="Корпоративное обучение" type="radio" name="format" checked>Корпоративное обучение<br>
 				<input value="Курсы в Учебном центре 1С-КПД" type="radio" name="format">Курсы в Учебном центре 1С-КПД<br />
-				<a href="#" class="button">Оставить заявку</a>
+				<a href="#" class="button form">Оставить заявку</a>
 			</div>
 		</form>
 	</div>
@@ -92,7 +92,7 @@ $APPLICATION->SetTitle('1С КПД');
 		<form action="/ajax/form_send.php" method="post" data-type="receive_gift" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">
 			<input type="text" name="email" class="email" placeholder="E-mail">
-			<a href="#" class="button">Оставить заявку</a>
+			<a href="#" class="button form">Оставить заявку</a>
 		</form>
 	</div>
 </div>
@@ -111,10 +111,12 @@ $APPLICATION->SetTitle('1С КПД');
 				<option value="Тариф 3">Тариф 3</option>
 			</select>
 			<textarea name="text" placeholder="Комментарий"></textarea>
-			<a href="#" class="button">Отправить заявку</a>
+			<a href="#" class="button form">Отправить заявку</a>
 		</form>
 	</div>
 </div>
+
+<div><a class="ajax" href="/ajax/request_call.php">Онлайн звонок</a></div>
 
 
 <?

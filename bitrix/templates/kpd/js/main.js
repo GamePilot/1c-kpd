@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// Прокрутка страницы
 	var delay = 1000; // Задержка прокрутки
 	var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
 	$(window).scroll(function () {
@@ -31,7 +32,7 @@ $(document).ready(function() {
 	});
 
 	// Отправка формы
-	$(".button").click(function(e){
+	$("a.form").click(function(e){
 		var ajax = {};
 		var form = $(this).parents("form");
 		var type = form.attr("data-type");
@@ -63,5 +64,55 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
+	// Отправка модалок
+	$("a.modal").live("click",function(e){
+		var ajax = {};
+		var form = $(this).parents("form");
+		var type = form.attr("data-type");
+		form.find("input").attr("placeholder", "").removeClass("error"); // Удалить все ошибки
+		form.ajaxSubmit({
+			data: {
+				type  : type
+			},
+			dataType: "json",
+			success: function(data) {
+				ajax = data;
+				if(ajax.mess.length > 0)
+				{
+					// Успешная отправка
+				}
+				else if (ajax.error.length > 0)
+				{
+					// Сообщения об ошибках
+					for (var input_name in ajax.error_keys){
+						form.find("input[name=" + input_name + "]").attr("placeholder", ajax.error_keys[input_name]).addClass("error");
+					}
+				}
+			},
+			error: function(){
+				ajax.error = "Запрос выполнен неудачно";
+			},
+			complete: function(){
+				//location.reload();
+			}
+		});
+
+		e.preventDefault();
+	});
+
+	// Модальные окна
+	$("a.ajax").click(function(e){
+		var href = $(this).attr("href");
+		show_modal(href);
+		
+		e.preventDefault();
+	});
+	
+	function show_modal(href){
+		$.colorbox({
+			href:href
+		});
+	}
+	
 
 }); // end ready()
