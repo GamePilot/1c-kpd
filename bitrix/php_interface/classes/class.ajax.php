@@ -73,8 +73,11 @@ class ajax
 				$error[] = $value;
 				$this->error_keys[$key] = $arFieldsError[$key];
 			}
-		}		
-		if(!empty($error)){
+		}
+		// Проверка E-mail
+		$this->email($this->request["email"], "email");
+
+		if(!empty($error) or !empty($this->error_keys)){
 			$this->error = "Пожалуйста, заполните обязательные поля";
 			$this->send_ajax();
 			return false;
@@ -113,7 +116,10 @@ class ajax
 				$this->error_keys[$key] = $arFieldsError[$key];
 			}
 		}
-		if(!empty($error)){
+		// Проверка E-mail
+		$this->email($this->request["email"], "email");
+
+		if(!empty($error) or !empty($this->error_keys)){
 			$this->error = "Пожалуйста, заполните обязательные поля";
 			$this->send_ajax();
 			return false;
@@ -154,7 +160,10 @@ class ajax
 				$this->error_keys[$key] = $arFieldsError[$key];
 			}
 		}
-		if(!empty($error)){
+		// Проверка E-mail
+		$this->email($this->request["email"], "email");
+
+		if(!empty($error) or !empty($this->error_keys)){
 			$this->error = "Пожалуйста, заполните обязательные поля";
 			$this->send_ajax();
 			return false;
@@ -348,5 +357,22 @@ class ajax
 			return true;
 		}
 	}
+
+	/**
+	 * Валидация Email
+	 * @param string $str - Строка проверки
+	 * @param string $name - Имя поля, если нужен целевой вывод
+	 * @return bool
+	 */
+	private function email($str, $name){
+		$pattern = "/[0-9a-z_]+@[0-9a-z_^\.]+\.[a-z]{2,3}/i";
+		if(!preg_match($pattern, $str)){
+			$this->error_keys[$name] = "Неверно введен E-mail";
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 
 }

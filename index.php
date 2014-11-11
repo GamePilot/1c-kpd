@@ -10,19 +10,19 @@ $APPLICATION->SetTitle('1С КПД');
 			<h2>1С:Документооборот</h2>
 			<p>Эффективная система организации делопроизводства и управления процессами</p>
 			<a href="#" class="button">Демоверсия</a>
-			<a href="#" class="button">Просмотреть демонстрацию</a>
+			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
 		</div>
 		<div class="slide sl1">
 			<h2>1С:Документооборот</h2>
 			<p>Эффективная система организации делопроизводства и управления процессами</p>
 			<a href="#" class="button">Демоверсия</a>
-			<a href="#" class="button">Просмотреть демонстрацию</a>
+			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
 		</div>
 		<div class="slide sl1">
 			<h2>1С:Документооборот</h2>
 			<p>Эффективная система организации делопроизводства и управления процессами</p>
 			<a href="#" class="button">Демоверсия</a>
-			<a href="#" class="button">Просмотреть демонстрацию</a>
+			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
 		</div>
 	</div>
 </div>
@@ -48,7 +48,7 @@ $APPLICATION->SetTitle('1С КПД');
 	</div>
 	<div class="box">
 		<p class="title"><img src="/bitrix/templates/kpd/images/icon-businnes.jpg" /><span>Бизнес-процессы</span></p>
-		<p>Отправка документов возможна по простым маршрутам: рассмотрение, исполнение, согласование, утверждение, регистрация, ознакомление, поручение, или по сложному комплесному процессу</p>
+		<p>Отправка документов возможна по простым маршрутам: рассмотрение, исполнение, согласование, утверждение, регистрация, ознакомление, поручение, или по сложному комплексному процессу</p>
 	</div>
 	<div class="box">
 		<p class="title"><img src="/bitrix/templates/kpd/images/icon-inter.jpg" /><span>Интеграция</span></p>
@@ -56,7 +56,7 @@ $APPLICATION->SetTitle('1С КПД');
 	</div>
 	<div class="box">
 		<p class="title"><img src="/bitrix/templates/kpd/images/icon-pravo.jpg" /><span>Права доступа</span></p>
-		<p>Политики доступа, грифы доступа, делегирование прав, передача прав подчиненных руководителям, передача прав подчиненных руководителям, шифрование файлов.</p>
+		<p>Политики доступа, грифы доступа, делегирование прав, передача прав подчиненных руководителям, шифрование файлов. </p>
 	</div>
 	<div class="box no-mr">
 		<p class="title"><img src="/bitrix/templates/kpd/images/icon-uprav.jpg" /><span>Управление договорами</span></p>
@@ -73,7 +73,7 @@ $APPLICATION->SetTitle('1С КПД');
                     <p class="title">ПРОФ</p>
                     <p>1С:Документооборот ПРОФ рекомендуется для малых и средних организаций.</p>
                     <span>36 000 руб.</span>
-                    <a href="#" class="button">Купить</a>
+                    <a href="/ajax/request_call.php" class="ajax button">Купить</a>
                     <div class="clr"></div>
                 </div>
                 <div class="box b2">
@@ -81,7 +81,7 @@ $APPLICATION->SetTitle('1С КПД');
                     <p class="title">КОРП</p>
                     <p>1С:Документооборот государственного учреждения предназначен для бюджетных учреждений. </p>
                     <span>144 000 руб.</span>
-                    <a href="#" class="button">Купить</a>
+                    <a href="/ajax/request_call.php" class="ajax button">Купить</a>
                     <div class="clr"></div>
                 </div>
                 <div class="box b3">
@@ -89,7 +89,7 @@ $APPLICATION->SetTitle('1С КПД');
                     <p class="title">ДГУ</p>
                     <p>1С:Документооборот государственного учреждения предназначен для крупных бюджетных учреждений со сложной организационной культурой</p>
                     <span>117 600 руб.</span>
-                    <a href="#" class="button">Купить</a>
+                    <a href="/ajax/request_call.php" class="ajax button">Купить</a>
                     <div class="clr"></div>
                 </div>
                 <img src="/bitrix/templates/kpd/images/line.jpg" class="line" />
@@ -129,7 +129,7 @@ $APPLICATION->SetTitle('1С КПД');
 		<p>«1C:Электронное обучение. Работа с прикладным решением «1C:Документооборот» (облако)</p>
 		<form action="/ajax/form_send.php" method="post" data-type="receive_gift" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">
-			<input type="text" name="email" class="email" placeholder="E-mail">
+			<input type="email" name="email" class="email" placeholder="E-mail">
 			<a href="#" class="button form">Оставить заявку</a>
 		</form>
 	</div>
@@ -155,9 +155,6 @@ $APPLICATION->SetTitle('1С КПД');
 		</form>
 	</div>
 </div>
-
-<div><a class="ajax" href="/ajax/request_call.php">Онлайн звонок</a></div>
-
 
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');

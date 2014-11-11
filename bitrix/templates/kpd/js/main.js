@@ -45,7 +45,12 @@ $(document).ready(function() {
 				ajax = data;
 				if(ajax.mess.length > 0)
 				{
-					sweetAlert("Спасибо!", ajax.mess, "success");
+					sweetAlert({
+						title: "Спасибо!",
+						text: ajax.mess,
+						type: "success", 
+						timer: 5000
+					});
 				} 
 				else if (ajax.error.length > 0)
 				{
