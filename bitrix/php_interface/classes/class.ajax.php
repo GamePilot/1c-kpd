@@ -128,7 +128,7 @@ class ajax
 		// Отправка на емаил
 		$messID = CEvent::Send("FORM_KPD_2", "s1", $this->request, "N");
 		if($messID > 0){
-			$this->mess = "Ваша заявка отправлена";
+			$this->mess = "Ваша заявка отправлена. Окно закроется через 3 секунды!";
 			$this->send_ajax();
 		} else {
 			$this->error = "Заявку отправить не удалось";
@@ -213,8 +213,7 @@ class ajax
 		}
 
 		// Отправка на емаил
-		//$messID = CEvent::Send("ONLINE_CALL", "s1", $this->request, "N");
-		$messID = 0;
+		$messID = CEvent::Send("ONLINE_CALL_FORM", "s1", $this->request, "N");
 		if($messID > 0){
 			$this->mess = "Ваша заявка отправлена";
 			$this->send_ajax();

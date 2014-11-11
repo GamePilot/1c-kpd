@@ -110,7 +110,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<div class="left">
 				<input type="text" name="name" placeholder="Имя">
 				<input type="text" name="phone" placeholder="Телефон">
-				<input type="text" name="email" placeholder="E-mail">
+				<input type="email" name="email" placeholder="E-mail">
 			</div>
 			<div class="right">
 				<p>Удобный для Вас формат обучения:</p>
@@ -142,7 +142,7 @@ $APPLICATION->SetTitle('1С КПД');
 		<form action="/ajax/form_send.php" method="post" data-type="contact_form" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">
 			<input type="text" name="phone" placeholder="Телефон">
-			<input type="text" name="email" placeholder="E-mail">
+			<input type="email" name="email" placeholder="E-mail">
 			<select name="tarif">
 				<option selected value="none">Тариф</option>
 				<option value="Онлайн">Онлайн</option>

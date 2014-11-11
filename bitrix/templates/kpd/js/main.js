@@ -85,6 +85,7 @@ $(document).ready(function() {
 				if(ajax.mess.length > 0)
 				{
 					// Успешная отправка
+					// TODO
 				}
 				else if (ajax.error.length > 0)
 				{
