@@ -65,6 +65,44 @@ $APPLICATION->SetTitle('1С КПД');
 </div>
 <hr>
 <!-- none -->
+<div class="container boxes ver-prod">
+            <h1>Три версии продукта</h1>
+            <div class="content">
+                <div class="box b1">
+                    <img src="/bitrix/templates/kpd/images/b1.png" />
+                    <p class="title">ПРОФ</p>
+                    <p>1С:Документооборот ПРОФ рекомендуется для малых и средних организаций.</p>
+                    <span>36 000 руб.</span>
+                    <a href="#" class="button">Купить</a>
+                    <div class="clr"></div>
+                </div>
+                <div class="box b2">
+                    <img src="/bitrix/templates/kpd/images/b2.png" />
+                    <p class="title">КОРП</p>
+                    <p>1С:Документооборот государственного учреждения предназначен для бюджетных учреждений. </p>
+                    <span>144 000 руб.</span>
+                    <a href="#" class="button">Купить</a>
+                    <div class="clr"></div>
+                </div>
+                <div class="box b3">
+                    <img src="/bitrix/templates/kpd/images/b3.png" />
+                    <p class="title">ДГУ</p>
+                    <p>1С:Документооборот государственного учреждения предназначен для крупных бюджетных учреждений со сложной организационной культурой</p>
+                    <span>117 600 руб.</span>
+                    <a href="#" class="button">Купить</a>
+                    <div class="clr"></div>
+                </div>
+                <img src="/bitrix/templates/kpd/images/line.jpg" class="line" />
+                <div class="button">
+                    <a href="#" class="button">Подробное сравнение</a>
+                </div>
+            </div>
+            <div class="phone">
+                <p>Возникли вопросы? <img src="/bitrix/templates/kpd/images/icon-phone.jpg" /> <span>+7 (499) <strong>638-34-03</strong></span></p>
+            </div>
+        </div>
+        <hr>
+        <!-- none -->
 <div class="container boxes form1">
 	<div class="content">
 		<p class="title">Получите в подарок новую книгу<br /> <span>«1С:Документооборот. 200 вопросов и ответов»</span> <br />или <span>просмотр записи мини-семинара</span><br /> по 1С:Документооборот для специалистов</p>
@@ -106,9 +144,11 @@ $APPLICATION->SetTitle('1С КПД');
 			<input type="text" name="phone" placeholder="Телефон">
 			<input type="text" name="email" placeholder="E-mail">
 			<select name="tarif">
-				<option selected value="Тариф 1">Тариф 1</option>
-				<option value="Тариф 2">Тариф 2</option>
-				<option value="Тариф 3">Тариф 3</option>
+				<option selected value="none">Тариф</option>
+				<option value="Онлайн">Онлайн</option>
+				<option value="Базовый">Базовый</option>
+				<option value="Стандарт">Стандарт</option>
+				<option value="Проф">Проф</option>
 			</select>
 			<textarea name="text" placeholder="Комментарий"></textarea>
 			<a href="#" class="button form">Отправить заявку</a>

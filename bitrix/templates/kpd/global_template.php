@@ -104,16 +104,20 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	</div>
 </div>
 
+
+
 {Page Text}
+
+
 
 <!-- подвал -->
 <div class="container boxes footer">
 	<img src="/bitrix/templates/kpd/images/logo-bottom.jpg">
 	<div class="social">
-		<a href="#" class="vk" target="_blank"><span>vk</span></a>
-		<a href="#" class="facebook" target="_blank"><span>facebook</span></a>
+		<a href="http://vk.com/1cdocflow" class="vk" target="_blank"><span>vk</span></a>
+		<a href="https://www.facebook.com/groups/1cdocflow/" class="facebook" target="_blank"><span>facebook</span></a>
 		<a href="#" class="skype" target="_blank"><span>skype</span></a>
-		<a href="#" class="twitter" target="_blank"><span>twitter</span></a>
+		<a href="https://twitter.com/1ckpd/" class="twitter" target="_blank"><span>twitter</span></a>
 		<a href="#" class="linked" target="_blank"><span>linked</span></a>
 	</div>
 	<p>© 1C-КПД 2014</p>
