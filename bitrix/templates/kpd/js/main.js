@@ -85,7 +85,13 @@ $(document).ready(function() {
 				if(ajax.mess.length > 0)
 				{
 					// Успешная отправка
-					// TODO
+					$.colorbox.close();
+					sweetAlert({
+						title: "Спасибо!",
+						text: ajax.mess,
+						type: "success",
+						timer: 5000
+					});
 				}
 				else if (ajax.error.length > 0)
 				{
