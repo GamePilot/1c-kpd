@@ -6,8 +6,7 @@ class ajax
 {
 	
 	/**
-	 * Тип запроса
-	 * contact - Отправка формы обратной связи
+	 * Тип(код) запроса
 	 * @var string
 	 */
 	public $type = "";
@@ -33,16 +32,32 @@ class ajax
 		
 		switch ($this->type){
 			case "form_send": // Получите в подарок новую книгу
-				$this->form_send();
+				$this->form_send(array(
+					"name" => "",
+					"phone" => "",
+					"email" => ""
+				));
 				break;
 			case "receive_gift": // Получите в подарок
-				$this->receive_gift();
+				$this->receive_gift(array(
+					"name" => "",
+					"email" => ""
+				));
 				break;
 			case "contact_form": // Оставьте заявку и мы свяжемся с Вами в ближайшее время
-				$this->contact_form();
+				$this->contact_form(array(
+					"name" => "",
+					"phone" => "",
+					"email" => "",
+					"text" => ""
+				));
 				break;
 			case "online_call": // Модалка "Заказать звонок"
-				$this->online_call();
+				$this->online_call(array(
+					"name" => "Введите свое имя",
+					"phone" => "Неверный формат номера",
+					"time_call" => ""
+				));
 				break;
 			default:
 				$this->error = "Не определен тип запроса";
@@ -57,31 +72,16 @@ class ajax
 
 	/**
 	 * Получите в подарок новую книгу
+	 * @param array $arFieldsError - массив обязательных полей
 	 * @return bool
 	 */
-	public function form_send()
+	public function form_send($arFieldsError)
 	{
-		// Проверка полей
-		$error = array();
-		$arFieldsError = array(
-			"name" => "",
-			"phone" => "",
-			"email" => ""
-		);
-		foreach($arFieldsError as $key => $value){
-			if(empty($this->request[$key])){
-				$error[] = $value;
-				$this->error_keys[$key] = $arFieldsError[$key];
-			}
-		}
-		// Проверка E-mail
-		$this->email($this->request["email"], "email");
-
-		if(!empty($error) or !empty($this->error_keys)){
-			$this->error = "Пожалуйста, заполните обязательные поля";
-			$this->send_ajax();
+		// Проверка полей		
+		$this->email($this->request["email"], "email"); // Проверка E-mail
+		if(!$this->field_check($arFieldsError))
 			return false;
-		}
+
 
 		// Отправка на емаил
 		$messID = CEvent::Send("FORM_KPD", "s1", $this->request, "N");
@@ -100,30 +100,15 @@ class ajax
 
 	/**
 	 * Получите в подарок
+	 * @param array $arFieldsError - массив обязательных полей
 	 * @return bool
 	 */
-	public function receive_gift()
+	public function receive_gift($arFieldsError)
 	{
-		// Проверка полей
-		$error = array();
-		$arFieldsError = array(
-			"name" => "",
-			"email" => ""
-		);
-		foreach($arFieldsError as $key => $value){
-			if(empty($this->request[$key])){
-				$error[] = $value;
-				$this->error_keys[$key] = $arFieldsError[$key];
-			}
-		}
-		// Проверка E-mail
-		$this->email($this->request["email"], "email");
-
-		if(!empty($error) or !empty($this->error_keys)){
-			$this->error = "Пожалуйста, заполните обязательные поля";
-			$this->send_ajax();
+		// Проверка полей		
+		$this->email($this->request["email"], "email"); // Проверка E-mail
+		if(!$this->field_check($arFieldsError))
 			return false;
-		}
 
 		// Отправка на емаил
 		$messID = CEvent::Send("FORM_KPD_2", "s1", $this->request, "N");
@@ -142,32 +127,15 @@ class ajax
 
 	/**
 	 * Оставьте заявку и мы свяжемся с Вами в ближайшее время
+	 * @param array $arFieldsError - массив обязательных полей
 	 * @return bool
 	 */
-	public function contact_form()
+	public function contact_form($arFieldsError)
 	{
-		// Проверка полей
-		$error = array();
-		$arFieldsError = array(
-			"name" => "",
-			"phone" => "",
-			"email" => "",
-			"text" => ""
-		);
-		foreach($arFieldsError as $key => $value){
-			if(empty($this->request[$key])){
-				$error[] = $value;
-				$this->error_keys[$key] = $arFieldsError[$key];
-			}
-		}
-		// Проверка E-mail
-		$this->email($this->request["email"], "email");
-
-		if(!empty($error) or !empty($this->error_keys)){
-			$this->error = "Пожалуйста, заполните обязательные поля";
-			$this->send_ajax();
+		// Проверка полей		
+		$this->email($this->request["email"], "email"); // Проверка E-mail
+		if(!$this->field_check($arFieldsError))
 			return false;
-		}
 
 		// Отправка на емаил
 		$messID = CEvent::Send("SEND_CONTACT_FORM", "s1", $this->request, "N");
@@ -186,31 +154,15 @@ class ajax
 
 	/**
 	 * Модалка "Заказать звонок"
+	 * @param array $arFieldsError - массив обязательных полей
 	 * @return bool
 	 */
-	public function online_call()
+	public function online_call($arFieldsError)
 	{
-		// Проверка полей
-		$error = array();
-		$arFieldsError = array(
-			"name" => "Введите свое имя",
-			"phone" => "Неверный формат номера",
-			"time_call" => ""
-		);
-		foreach($arFieldsError as $key => $value){
-			if(empty($this->request[$key])){
-				$error[] = $value;
-				$this->error_keys[$key] = $arFieldsError[$key];
-			}
-		}
-		// Проверка телефона
-		$this->phone($this->request["phone"], "phone");
-		
-		if(!empty($error) or !empty($this->error_keys)){
-			$this->error = "Пожалуйста, заполните обязательные поля";
-			$this->send_ajax();
-			return false;
-		}
+		// Проверка полей		
+		$this->phone($this->request["phone"], "phone"); // Проверка телефона
+		if(!$this->field_check($arFieldsError))
+			return false;		
 
 		// Отправка на емаил
 		$messID = CEvent::Send("ONLINE_CALL_FORM", "s1", $this->request, "N");
@@ -373,5 +325,29 @@ class ajax
 		}
 	}
 
+	/**
+	 * Проверка полей
+	 * @param $arFieldsError - массив обязательных полей
+	 * @return bool
+	 */
+	private function field_check($arFieldsError)
+	{
+		// Проверка полей
+		$error = array();
+		foreach($arFieldsError as $key => $value){
+			if(empty($this->request[$key])){
+				$error[] = $value;
+				$this->error_keys[$key] = $arFieldsError[$key];
+			}
+		}
+
+		if(!empty($error) or !empty($this->error_keys)){
+			$this->error = "Пожалуйста, заполните обязательные поля";
+			$this->send_ajax();
+			return false;
+		}
+		
+		return true;
+	}
 
 }
