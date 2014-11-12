@@ -9,19 +9,19 @@ $APPLICATION->SetTitle('1С КПД');
 		<div class="slide sl1">
 			<h2>1С:Документооборот</h2>
 			<p>Эффективная система организации делопроизводства и управления процессами</p>
-			<a href="#" class="button">Демоверсия</a>
+			<a href="/ajax/request_form_top.php" class="ajax button">Демоверсия</a>
 			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
 		</div>
 		<div class="slide sl1">
 			<h2>1С:Документооборот</h2>
 			<p>Эффективная система организации делопроизводства и управления процессами</p>
-			<a href="#" class="button">Демоверсия</a>
+			<a href="/ajax/request_form_top.php" class="ajax button">Демоверсия</a>
 			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
 		</div>
 		<div class="slide sl1">
 			<h2>1С:Документооборот</h2>
 			<p>Эффективная система организации делопроизводства и управления процессами</p>
-			<a href="#" class="button">Демоверсия</a>
+			<a href="/ajax/request_form_top.php" class="ajax button">Демоверсия</a>
 			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
 		</div>
 	</div>
@@ -66,43 +66,86 @@ $APPLICATION->SetTitle('1С КПД');
 <hr>
 <!-- none -->
 <div class="container boxes ver-prod">
-            <h1>Три версии продукта</h1>
-            <div class="content">
-                <div class="box b1">
-                    <img src="/bitrix/templates/kpd/images/b1.png" />
-                    <p class="title">ПРОФ</p>
-                    <p>1С:Документооборот ПРОФ рекомендуется для малых и средних организаций.</p>
-                    <span>36 000 руб.</span>
-                    <a href="/ajax/request_call.php" class="ajax button">Купить</a>
-                    <div class="clr"></div>
-                </div>
-                <div class="box b2">
-                    <img src="/bitrix/templates/kpd/images/b2.png" />
-                    <p class="title">КОРП</p>
-                    <p>1С:Документооборот государственного учреждения предназначен для бюджетных учреждений. </p>
-                    <span>144 000 руб.</span>
-                    <a href="/ajax/request_call.php" class="ajax button">Купить</a>
-                    <div class="clr"></div>
-                </div>
-                <div class="box b3">
-                    <img src="/bitrix/templates/kpd/images/b3.png" />
-                    <p class="title">ДГУ</p>
-                    <p>1С:Документооборот государственного учреждения предназначен для крупных бюджетных учреждений со сложной организационной культурой</p>
-                    <span>117 600 руб.</span>
-                    <a href="/ajax/request_call.php" class="ajax button">Купить</a>
-                    <div class="clr"></div>
-                </div>
-                <img src="/bitrix/templates/kpd/images/line.jpg" class="line" />
-                <div class="button">
-                    <a href="#" class="button">Подробное сравнение</a>
-                </div>
-            </div>
-            <div class="phone">
-                <p>Возникли вопросы? <img src="/bitrix/templates/kpd/images/icon-phone.jpg" /> <span>+7 (499) <strong>638-34-03</strong></span></p>
-            </div>
-        </div>
-        <hr>
-        <!-- none -->
+	<h1>Три версии продукта</h1>
+		<div class="content">
+			<div class="box b1">
+				<img src="/bitrix/templates/kpd/images/b1.png" />
+				<p class="title">ПРОФ</p>
+				<p>1С:Документооборот ПРОФ рекомендуется для малых и средних организаций.</p>
+				<span>36 000 руб.</span>
+				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
+				<div class="clr"></div>
+			</div>
+			<div class="box b2">
+				<img src="/bitrix/templates/kpd/images/b2.png" />
+				<p class="title">КОРП</p>
+				<p>1С:Документооборот КОРП подойдет крупным организациям со сложной организационной структурой.</p>
+				<span>144 000 руб.</span>
+				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
+				<div class="clr"></div>
+			</div>
+			<div class="box b3">
+				<img src="/bitrix/templates/kpd/images/b3.png" />
+				<p class="title">ДГУ</p>
+				<p>1С:Документооборот государственного учреждения предназначен для бюджетных учреждений.</p>
+				<span>117 600 руб.</span>
+				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
+				<div class="clr"></div>
+			</div>
+			<img src="/bitrix/templates/kpd/images/line.jpg" class="line" />
+			<div class="button">
+				<a href="/ajax/version.php" class="ajax button">Подробное сравнение</a>
+         </div>
+		</div>
+	<div class="phone">
+		<p>Возникли вопросы? <img src="/bitrix/templates/kpd/images/icon-phone.jpg" /> <span>+7 (499) <strong>638-34-03</strong></span></p>
+	</div>
+</div>
+<hr>
+<!-- none -->
+<div class="container boxes vvedenie">
+	<div class="content">
+		<h1>ВНЕДРЕНИЕ</h1>
+		<p>1С-КПД является центром компетенции по документуобороту (1С:ЦКД) и занимем в нём</p>
+		<img src="/bitrix/templates/kpd/images/icon-cup.jpg" />I место
+
+		<h1>Технологии внедрения «1С Документооборот»</h1>
+
+		<div class="content">
+			<div class="box b1">
+				<p class="title">Стандартное внедрение</p>
+				<p>Консультирование и настройка 1С:Документооборот по листам учета рабочего времени в соответствии с требованиями Заказчика. Стоимость определяется по фактически отработанным часам.</p>
+				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
+				<div class="clr"></div>
+			</div>
+			<div class="box b2">
+				<p class="title">Модульное внедрение</p>
+				<p>Запуск типового функционала 1С:Документооборот по заранее определенным требованиям к модулям: НСИ, интеграция, входящие и исходящие, распорядительные документы, служебки, номенклатура дел, права доступа. Стоимость каждого модуля заранее определена. </p>
+				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
+				<div class="clr"></div>
+			</div>
+			<div class="box b3">
+				<p class="title">Корпоративное внедрение</p>
+				<p>Комплексное внедрение 1С:Документооборот с доработками. Стоимость определяется перед началом проекта после обследования процессов Заказчика. </p>
+				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
+				<div class="clr"></div>
+			</div>
+			<img src="/bitrix/templates/kpd/images/line.jpg" class="line" />
+			<div class="button">
+				<a href="/ajax/version.php" class="ajax button">Подробное сравнение</a>
+         </div>
+		</div>
+
+		<div class="inside">
+			<p>Расчет стоимости услуги</p>
+			<a href="/ajax/request_call.php" class="ajax button">Заказать звонок</a>
+		</div>
+
+
+	</div>
+</div>
+<hr>
+<!-- none -->
 <div class="container boxes form1">
 	<div class="content">
 		<p class="title">Получите в подарок новую книгу<br /> <span>«1С:Документооборот. 200 вопросов и ответов»</span> <br />или <span>просмотр записи мини-семинара</span><br /> по 1С:Документооборот для специалистов</p>

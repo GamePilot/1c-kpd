@@ -116,9 +116,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<div class="social">
 		<a href="http://vk.com/1cdocflow" class="vk" target="_blank"><span>vk</span></a>
 		<a href="https://www.facebook.com/groups/1cdocflow/" class="facebook" target="_blank"><span>facebook</span></a>
-		<a href="#" class="skype" target="_blank"><span>skype</span></a>
 		<a href="https://twitter.com/1ckpd/" class="twitter" target="_blank"><span>twitter</span></a>
-		<a href="#" class="linked" target="_blank"><span>linked</span></a>
+		<a href="http://www.youtube.com/user/1ckpd" class="skype" target="_blank"><span>linked</span></a>
 	</div>
 	<p>© 1C-КПД 2014</p>
 </div>

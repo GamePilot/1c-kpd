@@ -97,7 +97,7 @@
 #cboxTopCenter {}
 #cboxBottomCenter {}
 
-#cboxContent {-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; overflow: hidden;}
+#cboxContent {-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; overflow: hidden; margin: 20px 0;}
 
 .cboxIframe {
 	background: #fff;
@@ -108,7 +108,7 @@
 	border: 1px solid #ccc;
 }
 
-#cboxLoadedContent {}
+#cboxLoadedContent iframe { padding: 5px 5px 0 5px;}
 
 #cboxTitle {
 	position: absolute;
