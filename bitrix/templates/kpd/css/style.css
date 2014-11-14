@@ -203,6 +203,19 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .top-content a { display: inline-block; width: 64px; height: 64px; position: fixed; bottom: 120px;}
 .top-content a img {}
 
+/*-- SaaS (аренда 1С:Документооборот) --*/
+.saas {}
+.saas .right {}
+.saas .right p.title {}
+.saas .right .inner {}
+.saas .right .inner label {}
+.saas .right .inner input {}
+
+
+
+
+
+
 /*-- Наверх --*/
 .modal.w1000 .top-box { padding-top: 30px;}
 .modal.w1000 .top-box .bosex { display: inline-block; vertical-align: top; width: 317px; padding: 10px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}

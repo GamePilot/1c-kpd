@@ -126,5 +126,60 @@ $(document).ready(function() {
 		});
 	}
 	
+	/* Калькулятор */
+	var user_count_obj = $("form#count_service_cost input[name=user_count]");
+	var pay_period_obj = $("form#count_service_cost select[name=pay_period]");
+	var user_count = user_count_obj.val();
+	var pay_period =  pay_period_obj.val();
+	
+	get_calc_price(user_count, pay_period);
+	
+	user_count_obj.keyup(function(){
+		user_count = $(this).val();
+		get_calc_price(user_count, pay_period);
+	});
+	pay_period_obj.change(function(){
+		pay_period = $(this).val();
+		get_calc_price($(this), user_count, pay_period);
+	});
+
+	// Получение цен для калькулятора
+	function get_calc_price(user_count, pay_period)
+	{
+		var ajax = {};
+		var form = user_count_obj.parents("form");
+		var type = form.attr("data-type");
+		form.find("input").removeClass("error"); // Удалить все ошибки
+		form.ajaxSubmit({
+			data: {
+				type  : type
+			},
+			dataType: "json",
+			success: function(data) {
+				ajax = data;
+				if(ajax.mess.length > 0)
+				{
+					$("a.service-cost").text(ajax.month_price);
+					$("a.period-cost").text(ajax.price);
+				}
+				else if (ajax.error.length > 0)
+				{
+					// Сообщения об ошибках
+					for (var input_name in ajax.error_keys){
+						form.find("input[name=" + input_name + "]").addClass("error");
+					}
+					$("a.service-cost").text("none");
+					$("a.period-cost").text("none");
+				}
+			},
+			error: function(){
+				ajax.error = "Запрос выполнен неудачно";
+			},
+			complete: function(){
+				//location.reload();
+			}
+		});
+	}
+	
 
 }); // end ready()

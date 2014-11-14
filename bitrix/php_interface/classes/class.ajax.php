@@ -59,6 +59,12 @@ class ajax
 					"time_call" => ""
 				));
 				break;
+			case "calculator": // Вычисления калькулятора
+				$this->calculator(array(
+					"user_count" => "Количество пользователей",
+					"pay_period" => "Период оплаты"
+				));
+				break;
 			default:
 				$this->error = "Не определен тип запроса";
 				$this->send_ajax();
@@ -180,6 +186,70 @@ class ajax
 	}
 
 	/**
+	 * Вычисление цены для калькулятора
+	 * @param $arFieldsError - массив обязательных полей
+	 * @return bool
+	 */
+	public function calculator($arFieldsError)
+	{
+		$default_price = 1500;
+		// Проверка полей
+		// Пользователи от 1 до 40
+		if($this->request["user_count"] < 1 or $this->request["user_count"] > 40)
+			$this->request["user_count"] = "";
+		// Месяцы от 1 до 12
+		if($this->request["pay_period"] < 1 or $this->request["pay_period"] > 12)
+			$this->request["pay_period"] = "";
+
+		if(!$this->field_check($arFieldsError))
+			return false;
+		
+		// Скидка за юзеров
+		$n = $this->request["user_count"];
+		$price = 0;
+		$discount_price = $default_price;
+		for($i = 1; $i <= $n; $i++)
+		{
+			if($i == 1){
+				$price = $default_price;
+				continue;
+			}
+			if($i > 1 and $i <= 10 ){
+				$discount_price = $discount_price * 0.9;
+				$price = $price + $discount_price;
+				continue;
+			}
+			if($i > 10 and $i <= 20){
+				$discount_price = $discount_price * 0.95;
+				$price = $price + $discount_price;
+				continue;
+			}
+			if($i > 20 and $i <= 40){
+				$price = $price + $discount_price;
+			}
+		}
+		
+		// Скидка на срок оплаты
+		$month = $this->request["pay_period"];
+		$discount = 1;
+		if($month == 1) $discount = 1;
+		if($month >= 3) $discount = 0.95;
+		if($month >= 6) $discount = 0.9;
+		if($month >= 9) $discount = 0.85;
+		if($month >= 12) $discount = 0.8;
+
+		$price = round($price * $discount, 0);
+		
+		$this->mess = "Ok";
+		$this->send_ajax(array(
+			"month_price" => $price,
+			"price" => $price * $month
+		));
+		
+		return true;		
+	}
+	
+	/**
 	 * Отправка формы "Заказать On-line звонок"
 	 * НЕ ИСПОЛЬЗУЕТСЯ!
 	 * @return bool
@@ -253,18 +323,27 @@ class ajax
 		return true;
 	}
 
+
 	/**
 	 * Вывод аякса из параметров
+	 * @param array $params - Доп. параметры
 	 */
-	private function send_ajax()
+	private function send_ajax($params = array())
 	{
 		$arJson = array();
 		$arJson["mess"] = $this->mess;
 		$arJson["error"] = $this->error;
-		$arJson["html"] = $this->html;
-		$arJson["captcha_sid"] = $this->captcha_sid;
-		$arJson["captchaUrl"] = $this->captchaUrl;
 		$arJson["error_keys"] = $this->error_keys;
+		if(!empty($this->html)) $arJson["html"] = $this->html;
+		if(!empty($this->captcha_sid)) $arJson["captcha_sid"] = $this->captcha_sid;
+		if(!empty($this->captchaUrl)) $arJson["captchaUrl"] = $this->captchaUrl;
+		
+		// Вывод доп. параметров
+		if(!empty($params)){
+			foreach ($params as $key => $value){
+				$arJson[$key] = $value;
+			}
+		}
 		
 		echo json_encode($arJson);
 	}

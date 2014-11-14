@@ -140,12 +140,49 @@ $APPLICATION->SetTitle('1С КПД');
 			<p>Расчет стоимости услуги</p>
 			<a href="/ajax/request_call.php" class="ajax button">Заказать звонок</a>
 		</div>
+	</div>
+</div>
+<hr>
+<!-- none -->
+<div class="container boxes saas">
+	<div class="content">
+		<h1>SaaS (аренда 1С:Документооборот)</h1>
+		<p>Виртуальный сервер, полностью настроенный для оптимальной работы с продуктами «1С:Документооборот 8» и готовый к немедленному использованию.</p>
+
+
+
+
+
+
+		<div class="right">
+			<p class="title">Расчет стоимости услуги</p>
+			<div class="inner">
+				<form action="/ajax/form_send.php" method="post" id="count_service_cost" data-type="calculator">     
+				<label>Колличество пользователей:</label><input value="1" type="text" name="user_count" ><br />
+				<label>Период оплаты (мес):</label>
+				<select id="pay_period" name="pay_period">
+                  			<option selected="" value="1">1</option>
+                  			<option value="3">3</option>
+                  			<option value="6">6</option>
+                  			<option value="9">9</option>
+                  			<option value="12">12</option>
+                  		</select>
+<br />
+				<label>Сумма ежемесячного платежа составит:</label><a class="service-cost">none</a><br />
+				<label>Сумма за период составит:</label><a class="period-cost">none</a>
+</form>
+			</div>
+		</div>
 
 
 	</div>
 </div>
 <hr>
 <!-- none -->
+
+
+
+
 <div class="container boxes form1">
 	<div class="content">
 		<p class="title">Получите в подарок новую книгу<br /> <span>«1С:Документооборот. 200 вопросов и ответов»</span> <br />или <span>просмотр записи мини-семинара</span><br /> по 1С:Документооборот для специалистов</p>
