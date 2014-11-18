@@ -60,8 +60,8 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .ver-prod .content .box { background: #fff; border: 1px solid #E6E6E6; margin-bottom: 20px; width: 305px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 20px 15px; vertical-align: top;}
 .ver-prod .content .box.b1 {}
 .ver-prod .content .box.b1 img, .ver-prod .content .box.b2 img, .ver-prod .content .box.b3 img { position: absolute; margin: -22px 0 0 190px;}
-.ver-prod .content .box.b2 { margin: 0 0 0 -4px; border-left: 1px dashed #E5E5E5;}
-.ver-prod .content .box.b3 { margin-left: 19px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+.ver-prod .content .box.b2 { margin: 0 0 0 -5px; border-left: 1px dashed #E5E5E5;}
+.ver-prod .content .box.b3 { margin-left: 20px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
 .ver-prod .content .box p.title { font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; text-transform: uppercase; margin: 10px 0 15px; height: auto;}
 .ver-prod .content .box p { color: #89898c; margin-bottom: 10px; height: 70px;}
 .ver-prod .content .box span { font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; line-height: 47px; height: 47px; display: inline-block;}
@@ -74,11 +74,81 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .ver-prod .phone p span { font-size: 22px; line-height: 24px; color:#58585a;}
 .ver-prod .phone p span strong { font-weight: 700;}
 
-/*-- Три версии продукта --*/
+/*-- ВНЕДРЕНИЕ --*/
 .boxes.vvedenie { padding: 10px;}
-.vvedenie h1 {}
-.vvedenie .content {}
-.vvedenie .content p {color: #89898c; font-size: 15px;}
+.vvedenie h1 { text-align: center; margin: 25px 0 20px 0;}
+.vvedenie img.line-3 { margin: 0 auto; display: block;}
+.vvedenie p.small { text-align: center; display:block; font-size: 15px; line-height: 22px; margin-top: 10px; color: #89898c;}
+.vvedenie .icon-cup {color: #58585a; font-size: 13px; text-align: center; margin: 10px 0 15px; display: block;}
+.vvedenie .icon-cup img { text-align: center; margin-right: 10px;}
+.vvedenie .content {padding: 10px;}
+.vvedenie .content .box {border: 1px solid #E6E6E6; background: #F6F6F6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; width: 300px; display: inline-block; vertical-align: top; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.vvedenie .content .box:hover {border-color: #1C9FD9; -webkit-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); -moz-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); box-shadow:0 0 13px rgba(82, 168, 236, 0.6); cursor: pointer; background: #fff;}
+.vvedenie .content .box.b1, .vvedenie .content .box.b2 {margin-right: 15px;}
+.vvedenie .content .box.b3 {}
+.vvedenie .content .box p.title {color: #58585a; font-size: 15px; line-height: 22px; font-weight: 700; margin: 10px 0 15px; height: auto;}
+.vvedenie .content .box p.text { color: #89898c; font-size: 13px; line-height: 18px; height: 150px;}
+.vvedenie .content .box a.button { margin: 15px 0;}
+.vvedenie .inside { border: 1px solid #E6E6E6; padding: 10px; margin: 25px 10px 20px 10px;}
+.vvedenie .inside > div {background: url("../images/bg-vvedenie-inside.png") left bottom repeat-x; padding: 25px;}
+.vvedenie .inside p { font-size: 19px; line-height: 21px; color: #58585a; font-weight: 700; text-align: center; background: url("../images/line-4.png") center center no-repeat; margin-bottom: 25px;}
+.vvedenie .inside a.button { width: 130px; text-align: center; margin: 0 auto; display: block;}
+
+/*-- ОБУЧЕНИЕ --*/
+.obuchenie .content { padding: 10px 0;}
+.obuchenie .form-inner { border: 2px solid #F2E734; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 20px; margin: 40px 0;}
+.obuchenie .form-inner img.book { float: left;}
+.obuchenie .form-inner .inner { margin-left: 375px; width: 510px;}
+.obuchenie .form-inner .inner p { font-size: 15px; line-height: 22px; color: #58585a;}
+.obuchenie .form-inner .inner span { color: #069edb; font-weight: 700; display: block;}
+.obuchenie .form-inner .inner .line { border-top: 1px dashed #D2D2D2; margin: 15px 0;}
+.obuchenie .form-inner .inner .count { line-height: 35px; width: 349px; vertical-align: top; display: inline-block;}
+.obuchenie .form-inner .inner .count p {font-size: 15px; line-height: 22px; color: #069edb; font-weight: 700; margin-bottom: 10px;}
+.obuchenie .form-inner .inner .nummber {display: inline-block; vertical-align: top; margin: 0 4px;}
+.obuchenie .form-inner .inner .nummber.margin {  margin-left: 0 !important;}
+.obuchenie .form-inner .inner .nummber a { font-size: 15px; line-height: 35px; height: 35px; width: 40px; color: #58585a; font-weight: 700; text-align: center; text-decoration: none; border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; display: block;}
+.obuchenie .form-inner .inner .nummber span { font-size: 11px; line-height: 28px; color: #58585a; font-weight: normal; text-align: center;}
+.obuchenie .form-inner .inner a.button { display: inline-block; vertical-align: top; margin-top: 32px;}
+
+.obuchenie .box { display: inline-block; vertical-align: top; width: 300px; border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 15px;}
+.obuchenie .box.b1, .obuchenie .box.b2 { background: #F7F7EF; }
+.obuchenie p.text1, .obuchenie p.text2 { display: inline-block; vertical-align: middle; font-size: 15px; line-height: 20px; color: #58585a; font-weight: 700; text-decoration: underline; text-align: center; margin: 20px 0}
+.obuchenie .box.b2 { margin: 0 15px;}
+.obuchenie p.text1 { width: 620px}
+.obuchenie p.text2 { width: 300px}
+
+.obuchenie .box p.title { border-bottom: 1px solid #D7D7D1; margin-bottom: 30px; padding-bottom: 20px; color: #58585a; font-weight: 700; font-size: 13px; line-height: 18px; margin-top: 10px;}
+.obuchenie .box .inner {padding: 5px 0;}
+.obuchenie .box .inner.bor {border-bottom: 1px dashed #C8C8C1;}
+.obuchenie .box .inner .img, .obuchenie .box .inner p {vertical-align: middle; display: inline-block;}
+.obuchenie .box .inner .img { width: 30px;}
+.obuchenie .box .inner p { font-size: 13px; line-height: 18px; color: #58585a; width: 233px;}
+.obuchenie .box .inner p span {color: #89898c;}
+
+.obuchenie .box.b3 {}
+.obuchenie .box.b3 p.title { font-size: 13px; line-height: 18px; color:#58585a; text-align: center; padding-bottom: 10px; margin-bottom: 10px; font-weight: normal;}
+.obuchenie .box.b3 p.title strong { font-weight: 700; display: block; padding: 0 0 5px 0;}
+.obuchenie .box.b3 p.title u { text-decoration: underline; display: block; line-height: 16px;}
+
+.obuchenie .box.b3 p.price { text-align: center; border-bottom: 1px solid #D7D7D1; padding: 5px 0 15px; font-size: 15px; font-weight: 700; color: #58585a; margin-bottom: 20px;}
+.obuchenie .box.b3 a.ajax.button { margin: 0 0 10px 50px;}
+
+
+
+
+
+.obuchenie .box p.text {font-size: 13px; line-height: 18px; color: #89898c; margin-top: 30px;}
+
+.obuchenie .box .bottom { border-top: 1px solid #D7D7D1; display: block; margin: 15px 0; padding-top: 20px;}
+.obuchenie .box .bottom p { width: 145px; font-size: 13px; line-height: 18px; font-weight: 700; color: #58585a;display: inline-block; vertical-align: middle;}
+.obuchenie .box .bottom p span.blue { color: #069edb;}
+.obuchenie .box .bottom p span.red { color: #e83250;}
+.obuchenie .box .bottom a.button { display: inline-block; vertical-align: middle;}
+
+
+
+
+
 
 
 
@@ -117,9 +187,37 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .docstore .content {}
 .docstore .content {}
 
-.docstore .expert { border: 1px solid #1C9FD9; padding: 10px 15px; margin-top: 30px;}
+.docstore .expert { border: 1px solid #1C9FD9; padding: 10px 15px; margin-top: 30px; margin-bottom: 10px;}
 .docstore .expert img { margin: -25px 0 10px 0; padding: 0;}
 .docstore .expert p { text-align: left; font-size: 13px; line-height: 18px; color: #58585a; margin-bottom: 10px;}
+
+
+
+
+/*-- SaaS (аренда 1С:Документооборот) --*/
+.saas .inner { margin: 30px 0;}
+.saas .inner .left, .saas .inner .right { vertical-align: top; display: inline-block; width: 400px;}
+.saas .inner .left {}
+.saas .inner .left p { font-size: 18px; line-height: 20px; color: #58585a; font-weight: 700; text-align: center;}
+.saas .inner .left ul { margin: 0; padding: 0;}
+.saas .inner .left ul li { list-style: none; margin: 21px 0;}
+.saas .inner .left ul li span, .saas .inner .left ul li p { vertical-align: middle;}
+.saas .inner .left ul li span { color: #fff; background:url("../images/bg-ul-li.png") 0 0 no-repeat; width: 37px; height: 32px; display: inline-block; font-size: 15px; font-weight: 700; text-indent: 12px; line-height: 32px;}
+.saas .inner .left ul li p {font-size: 13px; line-height: 18px; color: #58585a; text-align: left; font-weight: normal; display: inline-block; width: 335px; margin-left: 10px;}
+
+
+
+
+.saas .inner .right { border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; width: 460px; padding: 30px 0; margin: 20px 0 20px 72px;}
+.saas .inner .right p { font-size: 18px; line-height: 20px; color: #58585a; font-weight: 700; padding: 0 0 10px 150px; text-align: left;}
+.saas .inner .right form {}
+.saas .inner .right form .row { display: block; margin: 15px 0;}
+.saas .inner .right form label { font-size: 13px; line-height: 22px; color:#58585a; text-align: right; width: 285px; display: inline-block;}
+.saas .inner .right form input, .saas .inner .right form select { border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; width: 90px; height: 30px; line-height: 30px; font-size: 12px; font-weight: 700; margin: 0 0 0 10px; text-align: center;}
+.saas .inner .right form select { margin-left: 7px; width: 93px;}
+.saas .inner .right form .line { border-top: 1px solid #DEDEDE; width: 390px; margin-left: 40px;}
+.saas .inner .right form a.period-cost, .saas .inner .right form a.service-cost {border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; width: 90px; height: 30px; line-height: 30px; font-size: 12px; font-weight: 700; margin: 0 0 0 10px; text-align: center; display: inline-block;}
+.saas .inner .right form .row span, .saas .inner .right form .row span { padding-left: 10px;}
 
 
 
@@ -132,6 +230,42 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .form2 .content form { text-align: center; display: block; margin: 25px 0;}
 .form2 .content form input { display: inline-block; color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: center; height: 30px; line-height: 30px; width: 228px;}
 .form2 .content form input.email { margin: 0 25px 0 10px;}
+
+/*-- Сопровождение (техподдержка) --*/
+.soprov {}
+.soprov p.text { text-align: center; font-size: 19px; color: #58585a; font-weight: 700; margin: 35px 0 25px;}
+.soprov .box { display: inline-block; width: 300px; vertical-align: top; padding: 0 25px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.soprov .box img { margin: 0 auto; display: block;}
+.soprov .box p { text-align: center; font-size: 15px; line-height: 22px; color: #58585a; margin: 10px 0;}
+.soprov .box2 ul { margin: 0; padding: 0;}
+.soprov .box2 ul li { list-style: none; margin:10px 0 20px; display: inline-block; vertical-align: top; width: 310px;}
+.soprov .box2 ul li span, .saas .inner .left ul li p { vertical-align: top;}
+.soprov .box2 ul li span { color: #fff; background:url("../images/bg-ul-li.png") 0 0 no-repeat; width: 37px; height: 32px; display: inline-block; font-size: 15px; font-weight: 700; text-indent: 12px; line-height: 32px;}
+.soprov .box2 ul li p {font-size: 13px; line-height: 18px; color: #58585a; text-align: left; font-weight: normal; display: inline-block; width: 255px; margin-left: 10px;}
+
+/*-- Сопровождение (техподдержка) --*/
+.tab table {border: 1px solid #E6E6E6;}
+.tab table thead { background: #E6F5FB;}
+.tab table thead td { font-size: 13px; line-height: 22px; color: #58585a; font-weight: 700; text-transform: uppercase; padding: 10px 15px; border: 1px solid #E6E6E6; text-align: center;}
+.tab table thead td.left { text-align: left;}
+.tab table thead td.width { width: 110px;}
+
+.tab table tbody {}
+
+
+.tab table tbody tr {}
+.tab table tbody tr.bg { background: #FAFAF5;}
+.tab table tbody tr td { font-size: 13px; line-height: 18px; color: #58585a; text-align: center; border: 1px solid #E6E6E6; padding: 15px; vertical-align: middle;}
+.tab table tbody tr td strong { font-weight: normal; color: #58585a; display: block;}
+.tab table tbody tr td img { margin: 0 auto; display: block;}
+.tab table tbody tr td.left { text-align: left; color: #89898c;}
+.tab table tbody tr td.button a { width: 75px;}
+.tab table tbody tr td.strong { font-weight: 700;}
+
+
+
+
+
 
 /*-- Оставьте заявку --*/
 .container.form3 { padding: 10px;}
@@ -149,6 +283,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 /*-- none --*/
 .modal { width: 435px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; padding: 20px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
 .modal.w500 { width: 500px;}
+.modal.w270 { width: 270px;}
 .modal.w1000 { width: 1000px;}
 .modal a.close { background: url("../images/icon-close.png") 0 0 no-repeat; width: 19px; height: 18px; display: inline-block; float: right;}
 .modal a.close span { display: none;}
@@ -202,19 +337,6 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .top-content { position: relative; left: 1020px; display: none}
 .top-content a { display: inline-block; width: 64px; height: 64px; position: fixed; bottom: 120px;}
 .top-content a img {}
-
-/*-- SaaS (аренда 1С:Документооборот) --*/
-.saas {}
-.saas .right {}
-.saas .right p.title {}
-.saas .right .inner {}
-.saas .right .inner label {}
-.saas .right .inner input {}
-
-
-
-
-
 
 /*-- Наверх --*/
 .modal.w1000 .top-box { padding-top: 30px;}
