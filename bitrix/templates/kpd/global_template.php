@@ -14,11 +14,13 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/sweet-alert.css" />
 	<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/colorbox.css" />
+	<!--<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/flipclock.css" />-->
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="/bitrix/templates/kpd/js/sweet-alert.js"></script>
 	<script type="text/javascript" src="http://malsup.github.io/jquery.form.js"></script> <!--плагин ajaxForm-->
 	<script type="text/javascript" src="/bitrix/templates/kpd/js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/kpd/js/flipclock.js"></script>
 	<script type="text/javascript" src="/bitrix/templates/kpd/js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){

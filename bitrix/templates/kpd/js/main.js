@@ -181,5 +181,23 @@ $(document).ready(function() {
 		});
 	}
 	
+	// Часы с обратным отсчетом
+	var clock;
+
+	clock = $('.clock').FlipClock({
+		clockFace: 'DailyCounter',
+		autoStart: false,
+		language: 'ru',
+		callbacks: {
+			stop: function() {
+				$('.message').html('The clock has stopped!')
+			}
+		}
+	});
+
+	clock.setTime(220880);
+	clock.setCountdown(true);
+	clock.start();
+	
 
 }); // end ready()

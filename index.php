@@ -152,28 +152,9 @@ $APPLICATION->SetTitle('1С КПД');
 			<div class="inner">
 				<p>Получите в подарок новую книгу <span>«1С:Документооборот. 200 вопросов и ответов»</span> или <span>просмотр записи мини-семинара по <br />1С:Документооборот для специалистов</span></p>
 				<div class="line"></div>
-				<div class="count">
-					<p>До окончания акции осталось:</p>
-					<div class="nummber margin">
-						<a href="#">2</a>
-						<span>Дня</span>
-					</div>
-					:
-					<div class="nummber">
-						<a href="#">4</a>
-						<span>Часов</span>
-					</div>
-					:
-					<div class="nummber">
-						<a href="#">10</a>
-						<span>Минут</span>
-					</div>
-					:
-					<div class="nummber">
-						<a href="#">5</a>
-						<span>Секунд</span>
-					</div>
-				</div>
+				<p>До окончания акции осталось:</p>
+				<div class="clock"></div>
+				<div class="message"></div>
 				<a href="/ajax/request_call.php" class="ajax button">Оставить заявку</a>
 				<div class="clr"></div>
 			</div>
