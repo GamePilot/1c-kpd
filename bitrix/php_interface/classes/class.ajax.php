@@ -65,6 +65,13 @@ class ajax
 					"pay_period" => "Период оплаты"
 				));
 				break;
+			case "send_rate": // Сопровождение тариф %name%
+				$this->send_rate(array(
+					"name" => "Введите свое имя",
+					"phone" => "Неверный формат номера",
+					"email" => "Неверный формат E-mail"
+				));
+				break;
 			default:
 				$this->error = "Не определен тип запроса";
 				$this->send_ajax();
@@ -247,6 +254,34 @@ class ajax
 		));
 		
 		return true;		
+	}
+
+	/**
+	 * Модалка "Сопровождение тариф %name%"
+	 * @param array $arFieldsError - массив обязательных полей
+	 * @return bool
+	 */
+	public function send_rate($arFieldsError)
+	{
+		// Проверка полей		
+		$this->phone($this->request["phone"], "phone"); // Проверка телефона
+		$this->email($this->request["email"], "email"); // Проверка email
+		if(!$this->field_check($arFieldsError))
+			return false;
+
+		// Отправка на емаил
+		$messID = CEvent::Send("SEND_RATE", "s1", $this->request, "N");
+		if($messID > 0){
+			$this->mess = "Ваша заявка отправлена";
+			$this->send_ajax();
+		} else {
+			$this->error = "Заявку отправить не удалось";
+			$this->send_ajax();
+			return false;
+		}
+
+
+		return true;
 	}
 	
 	/**

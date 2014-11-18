@@ -469,10 +469,10 @@ $APPLICATION->SetTitle('1С КПД');
 				</tr>
 				<tr>
 					<td></td>
-					<td class="button"><a href="/ajax/request_form_simple.php" class="ajax button">Купить</a></td>
-					<td class="button"><a href="/ajax/request_form_simple.php" class="ajax button">Купить</a></td>
-					<td class="button"><a href="/ajax/request_form_simple.php" class="ajax button">Купить</a></td>
-					<td class="button"><a href="/ajax/request_form_simple.php" class="ajax button">Купить</a></td>
+					<td class="button"><a href="/ajax/request_form_simple.php?rate=Онлайн" class="ajax button">Купить</a></td>
+					<td class="button"><a href="/ajax/request_form_simple.php?rate=Базовый" class="ajax button">Купить</a></td>
+					<td class="button"><a href="/ajax/request_form_simple.php?rate=Стандарт" class="ajax button">Купить</a></td>
+					<td class="button"><a href="/ajax/request_form_simple.php?rate=Проф" class="ajax button">Купить</a></td>
 				</tr>
 			</tbody>
 		</table>
