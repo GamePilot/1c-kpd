@@ -67,7 +67,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					});
 				});
 
-			$(selector).countdown({since: new Date(2013, 12-1, 25)});
+
 
 			// manageControls: Hides and Shows controls depending on currentPosition
 			function manageControls(position){

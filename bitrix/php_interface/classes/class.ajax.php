@@ -72,6 +72,9 @@ class ajax
 					"email" => "Неверный формат E-mail"
 				));
 				break;
+			case "get_timer": // Получить секунды для таймера
+				$this->get_timer();
+				break;
 			default:
 				$this->error = "Не определен тип запроса";
 				$this->send_ajax();
@@ -282,6 +285,33 @@ class ajax
 
 
 		return true;
+	}
+
+	/**
+	 * Получить секунды для таймера
+	 * @return bool
+	 */
+	public function get_timer()
+	{		
+		$timer_file = $_SERVER["DOCUMENT_ROOT"]."/upload/timer.txt";
+		$text = file_get_contents($timer_file);
+		$arTimer = explode("|", $text);
+		$time = $arTimer[0] + $arTimer[1] - time();
+
+		if($time > 0){
+			$this->send_ajax(array("timer" => $time));
+			return true;
+		}
+		// Если таймер зациклен
+		elseif($arTimer[2] == "on" and $time < 0){
+			$period_count = floor($time/$arTimer[0]) * (-1);
+			$time = time() - $arTimer[1] - $arTimer[0]*$period_count;
+			$this->send_ajax(array("timer" => $time));
+			return true;
+		} else {
+			$this->send_ajax(array("timer" => 0));
+			return true;
+		}
 	}
 	
 	/**

@@ -34,6 +34,7 @@ if(isset($_POST["submit"]))
 		if($time > 0){
 			$arTimer_file = get_hour_time($time);
 		}
+		// Если таймер зациклен
 		elseif($arTimer[2] == "on" and $time < 0){
 			$period_count = floor($time/$arTimer[0]) * (-1);
 			$time = time() - $arTimer[1] - $arTimer[0]*$period_count;
