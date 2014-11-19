@@ -6,8 +6,9 @@ bitrix/tmp/*
 bitrix/backup/*
 /test.php
 /logs/my_log.sqlite
+/upload/
 
-html/
+/html/
 
 # Файлы шаблона
 bitrix/templates/*/footer.php

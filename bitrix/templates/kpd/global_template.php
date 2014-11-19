@@ -14,14 +14,15 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/sweet-alert.css" />
 	<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/colorbox.css" />
-	<!--<link rel="stylesheet" type="text/css" href="/bitrix/templates/kpd/css/flipclock.css" />-->
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="/bitrix/templates/kpd/js/sweet-alert.js"></script>
 	<script type="text/javascript" src="http://malsup.github.io/jquery.form.js"></script> <!--плагин ajaxForm-->
 	<script type="text/javascript" src="/bitrix/templates/kpd/js/jquery.colorbox-min.js"></script>
-	<script type="text/javascript" src="/bitrix/templates/kpd/js/flipclock.js"></script>
+
 	<script type="text/javascript" src="/bitrix/templates/kpd/js/main.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/kpd/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/kpd/js/jquery.countdown.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			var currentPosition = 0;
@@ -66,6 +67,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					});
 				});
 
+			$(selector).countdown({since: new Date(2013, 12-1, 25)});
+
 			// manageControls: Hides and Shows controls depending on currentPosition
 			function manageControls(position){
 				// Hide left arrow if position is first slide
@@ -108,7 +111,11 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 
 
+
+
 {Page Text}
+
+
 
 
 

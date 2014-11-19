@@ -65,7 +65,7 @@ $APPLICATION->SetTitle('1С КПД');
 </div>
 <hr>
 <!-- none -->
-<div class="container boxes ver-prod">
+<div class="container boxes ver-prod" id="pokupka">
 	<h1>Три версии продукта</h1>
 		<div class="content">
 			<div class="box b1">
@@ -104,7 +104,7 @@ $APPLICATION->SetTitle('1С КПД');
 <hr>
 <!-- none -->
 <div class="container boxes vvedenie">
-	<div class="content">
+	<div class="content" id="vnedrenie">
 		<h1>ВНЕДРЕНИЕ</h1>
 		<img src="/bitrix/templates/kpd/images/line-3.png" class="line-3" />
 		<p class="small">1С-КПД является центром компетенции по документуобороту<br /> (1С:ЦКД) и занимем в нём</p>
@@ -145,16 +145,17 @@ $APPLICATION->SetTitle('1С КПД');
 <hr>
 <!-- none -->
 <div class="container boxes obuchenie">
-	<div class="content">
+	<div class="content" id="obuchenie">
 		<h1>ОБУЧЕНИЕ</h1>
 		<div class="form-inner">
 			<img src="/bitrix/templates/kpd/images/book.jpg" class="book" />
 			<div class="inner">
 				<p>Получите в подарок новую книгу <span>«1С:Документооборот. 200 вопросов и ответов»</span> или <span>просмотр записи мини-семинара по <br />1С:Документооборот для специалистов</span></p>
 				<div class="line"></div>
-				<p>До окончания акции осталось:</p>
-				<div class="clock"></div>
-				<div class="message"></div>
+				<div class="count">
+					<p>До окончания акции осталось:</p>
+					<div id="defaultCountdown"></div>
+				</div>
 				<a href="/ajax/request_call.php" class="ajax button">Оставить заявку</a>
 				<div class="clr"></div>
 			</div>
@@ -248,7 +249,7 @@ $APPLICATION->SetTitle('1С КПД');
 </div>
 <hr>
 <!-- none -->
-<div class="container boxes docstore">
+<div class="container boxes docstore" id="docstore">
 	<h1>DocStore</h1>
 		<img src="/bitrix/templates/kpd/images/line-2.png">
 		<p>Имея большой опыт внедрения и доработок 1С:Документооборот у разных клиентов,<br /> мы систематизируем лучшие практики и оформляем их как готовые решения.<br />Приобретая готовое решение, Вы получаете дополнительный функционал к СЭД.</p>
@@ -299,7 +300,7 @@ $APPLICATION->SetTitle('1С КПД');
 </div>
 <hr>
 <!-- none -->
-<div class="container boxes docstore saas">
+<div class="container boxes docstore saas" id="saas">
 	<h1>SaaS (аренда 1С:Документооборот)</h1>
 	<img src="/bitrix/templates/kpd/images/line-2.png">
 	<p>Виртуальный сервер, полностью настроенный для оптимальной работы с продуктами<br /> «1С:Документооборот» и готовый к немедленному использованию.</p>
@@ -364,7 +365,7 @@ $APPLICATION->SetTitle('1С КПД');
 <hr>
 <!-- none -->
 <div class="container boxes soprov">
-	<div class="content">
+	<div class="content" id="soprovozhdenie">
 		<h1>Сопровождение (техподдержка)</h1>
 		<p class="text">Преимущества регулярного обслуживания</p>
 		<div class="box">
@@ -462,7 +463,7 @@ $APPLICATION->SetTitle('1С КПД');
 <hr>
 <!-- none -->
 <div class="container boxes form3">
-	<div class="content">
+	<div class="content" id="kontakty">
 		<p>Оставьте заявку и мы свяжемся с Вами в ближайшее время</p>
 		<form action="/ajax/form_send.php" method="post" data-type="contact_form" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">

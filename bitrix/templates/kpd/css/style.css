@@ -104,10 +104,22 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .obuchenie .form-inner .inner .line { border-top: 1px dashed #D2D2D2; margin: 15px 0;}
 .obuchenie .form-inner .inner .count { line-height: 35px; width: 349px; vertical-align: top; display: inline-block;}
 .obuchenie .form-inner .inner .count p {font-size: 15px; line-height: 22px; color: #069edb; font-weight: 700; margin-bottom: 10px;}
-.obuchenie .form-inner .inner .nummber {display: inline-block; vertical-align: top; margin: 0 4px;}
-.obuchenie .form-inner .inner .nummber.margin {  margin-left: 0 !important;}
-.obuchenie .form-inner .inner .nummber a { font-size: 15px; line-height: 35px; height: 35px; width: 40px; color: #58585a; font-weight: 700; text-align: center; text-decoration: none; border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; display: block;}
-.obuchenie .form-inner .inner .nummber span { font-size: 11px; line-height: 28px; color: #58585a; font-weight: normal; text-align: center;}
+
+
+
+
+.obuchenie .form-inner .inner .countdown-section {display: inline-block; vertical-align: top;}
+.obuchenie .form-inner .inner .dot { display: inline-block; width: 20px; color: #58585a; text-align: center;}
+.obuchenie .form-inner .inner .dot:last-child { display: none !important;}
+
+
+
+.obuchenie .form-inner .inner span.countdown-amount { font-size: 15px; line-height: 35px; height: 35px; width: 40px; color: #58585a; font-weight: 700; text-align: center; text-decoration: none; border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; display: block;}
+.obuchenie .form-inner .inner span.countdown-period { font-size: 11px; line-height: 28px; color: #58585a; font-weight: normal; text-align: center;}
+
+
+
+
 .obuchenie .form-inner .inner a.button { display: inline-block; vertical-align: top; margin-top: 32px;}
 
 .obuchenie .box { display: inline-block; vertical-align: top; width: 300px; border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 15px;}
@@ -168,7 +180,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .form1 .content form .left input { color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: center; height: 30px; line-height: 30px; width: 228px; display: block; margin-top: 16px;}
 .form1 .content form .right {color: #58585a;}
 .form1 .content form .right p { color: #58585a; font-weight: 700; margin-bottom: 10px;}
-.form1 .content form .right input { margin: 10px 15px 5px 0;}
+.form1 .content form .right input { margin: 0 15px 11px 0;}
 .form1 .content form .right a.button { margin: 25px 0 0 35px;}
 
 /*-- DocStore --*/
@@ -244,7 +256,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .soprov .box2 ul li p {font-size: 13px; line-height: 18px; color: #58585a; text-align: left; font-weight: normal; display: inline-block; width: 255px; margin-left: 10px;}
 
 /*-- Сопровождение (техподдержка) --*/
-.tab table {border: 1px solid #E6E6E6;}
+.tab table {border: 1px solid #E6E6E6; margin-top: 30px;}
 .tab table thead { background: #E6F5FB;}
 .tab table thead td { font-size: 13px; line-height: 22px; color: #58585a; font-weight: 700; text-transform: uppercase; padding: 10px 15px; border: 1px solid #E6E6E6; text-align: center;}
 .tab table thead td.left { text-align: left;}

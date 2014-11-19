@@ -181,23 +181,15 @@ $(document).ready(function() {
 		});
 	}
 	
-	// Часы с обратным отсчетом
-	var clock;
-
-	clock = $('.clock').FlipClock({
-		clockFace: 'DailyCounter',
-		autoStart: false,
-		language: 'ru',
-		callbacks: {
-			stop: function() {
-				$('.message').html('The clock has stopped!')
-			}
-		}
+	var newYear = new Date(); 
+	newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
+	$('#defaultCountdown').countdown({until: newYear}); 
+	 
+	$('#removeCountdown').click(function() { 
+	    var destroy = $(this).text() === 'Remove'; 
+	    $(this).text(destroy ? 'Re-attach' : 'Remove'); 
+	    $('#defaultCountdown').countdown(destroy ? 'destroy' : {until: newYear}); 
 	});
-
-	clock.setTime(220880);
-	clock.setCountdown(true);
-	clock.start();
 	
 
 }); // end ready()
