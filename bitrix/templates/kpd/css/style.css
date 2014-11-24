@@ -48,9 +48,12 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 /*-- Ключевые функции «1С:Документооборот» --*/
 .kl-fun { border-bottom: 2px solid #1C9FD9;}
 .kl-fun .box { display: inline-block; width: 220px; margin-right: 15px; vertical-align: top;}
-.kl-fun p.title { color:#58585a; font-size: 15px; line-height: 22px; font-weight: 700; vertical-align: middle; margin: 25px 0 20px 0;}
-.kl-fun p.title img { vertical-align: middle; margin-right: 10px; float: left;}
+.kl-fun p.title { color:#58585a; font-size: 15px; line-height: 22px; font-weight: 700; vertical-align: middle; margin: 25px 0 0 0; height: 45px;}
+.kl-fun p.title img { vertical-align: middle; margin-right: 8px; float: left;}
 .kl-fun p { font-size: 13px; line-height: 18px; color: #89898c;}
+.kl-fun p.title.pad-top { padding-top: 10px;}
+.kl-fun .pad-top-2 img { margin-top: 10px;}
+.kl-fun .pad-top-2 p.pp { padding-top: 10px;}
 
 /*-- Три версии продукта --*/
 .boxes.ver-prod { padding: 10px;}
@@ -66,7 +69,8 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .ver-prod .content .box p { color: #89898c; margin-bottom: 10px; height: 70px;}
 .ver-prod .content .box span { font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; line-height: 47px; height: 47px; display: inline-block;}
 .ver-prod .content .box a.button { float: right;}
-.ver-prod .content .box.b3:hover { border-color: #1C9FD9; -webkit-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); -moz-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); box-shadow:0 0 13px rgba(82, 168, 236, 0.6); cursor: pointer;}
+.ver-prod .content .box:hover { border-color: #1C9FD9; -webkit-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); -moz-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); box-shadow:0 0 13px rgba(82, 168, 236, 0.6); cursor: default; z-index: 2; position: relative;}
+.ver-prod .content .box.b2:hover { border-style: solid; }
 .ver-prod .content img.line { margin: 0 auto; display: block;}
 .ver-prod .content .button { text-align: center; margin:5px 0 0;}
 .ver-prod .phone p { font-size: 13px; color:#89898c; line-height: 24px; text-align: center; margin:20px 0 10px;}
@@ -82,8 +86,8 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .vvedenie .icon-cup {color: #58585a; font-size: 13px; text-align: center; margin: 10px 0 15px; display: block;}
 .vvedenie .icon-cup img { text-align: center; margin-right: 10px;}
 .vvedenie .content {padding: 10px;}
-.vvedenie .content .box {border: 1px solid #E6E6E6; background: #F6F6F6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; width: 300px; display: inline-block; vertical-align: top; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
-.vvedenie .content .box:hover {border-color: #1C9FD9; -webkit-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); -moz-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); box-shadow:0 0 13px rgba(82, 168, 236, 0.6); cursor: pointer; background: #fff;}
+.vvedenie .content .box {border: 1px solid #E6E6E6; background: #F6F6F6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; width: 300px; display: inline-block; vertical-align: top; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; cursor: default;}
+.vvedenie .content .box:hover {border-color: #1C9FD9; -webkit-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); -moz-box-shadow: 0 0 13px rgba(82, 168, 236, 0.6); box-shadow:0 0 13px rgba(82, 168, 236, 0.6); cursor: inherit; background: #fff;}
 .vvedenie .content .box.b1, .vvedenie .content .box.b2 {margin-right: 15px;}
 .vvedenie .content .box.b3 {}
 .vvedenie .content .box p.title {color: #58585a; font-size: 15px; line-height: 22px; font-weight: 700; margin: 10px 0 15px; height: auto;}
@@ -177,7 +181,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .form1 .content form { width: 565px; margin: 0 auto; padding-bottom: 40px;}
 .form1 .content form .left, .form1 .content form .right { display: inline-block; width: 280px; vertical-align: top;}
 .form1 .content form .left {}
-.form1 .content form .left input { color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: center; height: 30px; line-height: 30px; width: 228px; display: block; margin-top: 16px;}
+.form1 .content form .left input { color: #000; font-size: 13px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: center; width: 228px; display: block; margin-top: 16px; padding: 7px 10px;}
 .form1 .content form .right {color: #58585a;}
 .form1 .content form .right p { color: #58585a; font-weight: 700; margin-bottom: 10px;}
 .form1 .content form .right input { margin: 0 15px 11px 0;}
@@ -189,7 +193,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .docstore img { margin: 0 auto; display: block; padding: 10px 0;}
 .docstore p { font-size: 15px; line-height: 22px; color: #89898c; text-align: center;}
 .docstore .content { margin-top: 30px;}
-.docstore .content .box { border: 1px dashed #49B6E2; width: 220px; height: 220px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; display: inline-block; vertical-align: top; margin: 0 13px 16px 0;}
+.docstore .content .box { border: 1px dashed #49B6E2; width: 220px; height: 220px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; display: inline-block; vertical-align: top; margin: 0 12px 16px 0;}
 .docstore .content .box a { text-decoration: underline; color: #58585a; vertical-align: middle; display: table; height: 220px; width: 220px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 10px;}
 .docstore .content .box a:hover { color: #069edb;}
 .docstore .content .box a span { display: table-cell; vertical-align: middle; text-align: center;}
@@ -225,7 +229,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .saas .inner .right form {}
 .saas .inner .right form .row { display: block; margin: 15px 0;}
 .saas .inner .right form label { font-size: 13px; line-height: 22px; color:#58585a; text-align: right; width: 285px; display: inline-block;}
-.saas .inner .right form input, .saas .inner .right form select { border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; width: 90px; height: 30px; line-height: 30px; font-size: 12px; font-weight: 700; margin: 0 0 0 10px; text-align: center;}
+.saas .inner .right form input, .saas .inner .right form select { border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; width: 90px; padding: 7px 10px; font-size: 12px; font-weight: 700; margin: 0 0 0 10px; text-align: center;}
 .saas .inner .right form select { margin-left: 7px; width: 93px;}
 .saas .inner .right form .line { border-top: 1px solid #DEDEDE; width: 390px; margin-left: 40px;}
 .saas .inner .right form a.period-cost, .saas .inner .right form a.service-cost {border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; width: 90px; height: 30px; line-height: 30px; font-size: 12px; font-weight: 700; margin: 0 0 0 10px; text-align: center; display: inline-block;}
@@ -240,7 +244,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .form2 .content p { text-align: center; font-size: 15px; line-height: 22px; color: #069edb; font-weight: 700;}
 .form2 .content p.title {color: #58585a; font-weight: normal;}
 .form2 .content form { text-align: center; display: block; margin: 25px 0;}
-.form2 .content form input { display: inline-block; color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: center; height: 30px; line-height: 30px; width: 228px;}
+.form2 .content form input { display: inline-block; color: #000; font-size: 13px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: center; padding: 7px 10px; width: 228px;}
 .form2 .content form input.email { margin: 0 25px 0 10px;}
 
 /*-- Сопровождение (техподдержка) --*/
@@ -282,14 +286,14 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 /*-- Оставьте заявку --*/
 .container.form3 { padding: 10px;}
 .form3 .content { background: #F6F6F6; padding: 20px 0;}
-.form3 .content p { display: block; margin: 0 auto; text-align: center; font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; width: 250px;}
+.form3 .content p { display: block; margin: 0 auto; text-align: center; font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; width: 260px;}
 .form3 .content form { text-align: center; display: block; margin:0 auto; width: 300px; margin-top: 35px;}
-.form3 .content form input, .form3 .content form select { display: block; color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: left; height: 30px; line-height: 30px; width: 208px; margin: 0 auto; padding: 0 10px; margin-top:15px; margin-bottom: 15px;}
-.form3 .content form select { width: 230px; color: #757575; padding: 0 5px;}
+.form3 .content form input, .form3 .content form select { display: block; color: #000; font-size: 13px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: left; width: 208px; margin: 0 auto; padding: 7px 10px; margin-top:15px; margin-bottom: 15px;}
+.form3 .content form select { width: 230px; color: #757575; padding: 7px 5px 6px;}
 .form3 .content form select:focus {outline: none;}
 .form3 .content form select:hover {cursor: pointer;}
 .form3 .content form select option {cursor: pointer; outline: none;}
-.form3 .content form textarea { display: block; color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: left; height: 130px; line-height: 30px; width: 208px; margin: 0 auto; padding: 0 10px; margin-top:15px; margin-bottom: 15px; font-family: Arial, sans-serif;}
+.form3 .content form textarea { display: block; color: #000; font-size: 13px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: left; height: 130px; width: 208px; margin: 0 auto; padding: 7px 10px; margin-top:15px; margin-bottom: 15px; font-family: Arial, sans-serif;}
 .form3 .content form a.button { margin: 15px 0;}
 
 /*-- none --*/
@@ -305,7 +309,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .modal form { padding-right: 15px;}
 .modal form label { font-size: 13px; font-weight: 700; color: #58585a; display: block; margin-top: 15px;}
 .modal form label span { color: red;}
-.modal form input {display: block; color: #000; font-size: 13px; line-height: 22px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: left; height: 30px; line-height: 30px; width: 208px; padding: 0 10px; margin: 7px 0;}
+.modal form input {display: block; color: #000; font-size: 13px; border: 1px solid #E6E6E6; background: #fff; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; text-align: left; width: 208px; padding: 7px 10px; margin: 7px 0;}
 .modal form input.error { color: #ea4961; border-color:#E74D63; background: #FCECEF;}
 .modal form p.info { color: #89898c; font-size: 11px; line-height: 15px; width: 230px;}
 .modal form p.info-b { font-size: 13px; color: #58585a; border-top: 1px solid #DEDEDE; margin-top: 15px; padding-top: 10px;}

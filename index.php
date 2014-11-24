@@ -12,18 +12,6 @@ $APPLICATION->SetTitle('1С КПД');
 			<a href="/ajax/request_form_top.php" class="ajax button">Демоверсия</a>
 			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
 		</div>
-		<div class="slide sl1">
-			<h2>1С:Документооборот</h2>
-			<p>Эффективная система организации делопроизводства и управления процессами</p>
-			<a href="/ajax/request_form_top.php" class="ajax button">Демоверсия</a>
-			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
-		</div>
-		<div class="slide sl1">
-			<h2>1С:Документооборот</h2>
-			<p>Эффективная система организации делопроизводства и управления процессами</p>
-			<a href="/ajax/request_form_top.php" class="ajax button">Демоверсия</a>
-			<a href="/ajax/video.php" class="ajax button">Просмотреть демонстрацию</a>
-		</div>
 	</div>
 </div>
 
@@ -31,35 +19,35 @@ $APPLICATION->SetTitle('1С КПД');
 <div class="container boxes kl-fun">
 	<h1>Ключевые функции «1С:Документооборот»</h1>
 	<div class="box">
-		<p class="title"><img src="/bitrix/templates/kpd/images/icon-delo.jpg" /><span>Делопроизводство</span></p>
+		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-delo.jpg" /><span>Делопроизводство</span></p>
 		<p>Учет официальных документов организации в соответствии с российским законодательством, ГОСТами, отечественной и международной делопроизводственной практикой.</p>
 	</div>
-	<div class="box">
+	<div class="box pad-top-2">
 		<p class="title"><img src="/bitrix/templates/kpd/images/icon-vhod.jpg" /><span>Входящие и исходящие документы</span></p>
-		<p>Регистрация, рассмотрение, ознакомление и исполнение входящих документов. Согласование, утверждение, регистрация и отправка исходящих документов.</p>
+		<p class="pp">Регистрация, рассмотрение, ознакомление и исполнение входящих документов. Согласование, утверждение, регистрация и отправка исходящих документов.</p>
 	</div>
 	<div class="box">
-		<p class="title"><img src="/bitrix/templates/kpd/images/icon-vnut.jpg" /><span>Внутренние документы</span></p>
+		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-vnut.jpg" /><span>Внутренние документы</span></p>
 		<p>Обработка любых типов внутренних документов: организационно-распорядительные, информационно-справочные, кадровые, бухгалтерские, личные, оперативные, стратегические.</p>
 	</div>
 	<div class="box no-mr">
-		<p class="title"><img src="/bitrix/templates/kpd/images/icon-nomen.jpg" /><span>Номенклатура дел</span></p>
+		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-nomen.jpg" /><span>Номенклатура дел</span></p>
 		<p>Ведение номенклатуры дел по годам, организациям, подразделениям, видам документов, категориям и срокам хранения.</p>
 	</div>
 	<div class="box">
-		<p class="title"><img src="/bitrix/templates/kpd/images/icon-businnes.jpg" /><span>Бизнес-процессы</span></p>
+		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-businnes.jpg" /><span>Бизнес-процессы</span></p>
 		<p>Отправка документов возможна по простым маршрутам: рассмотрение, исполнение, согласование, утверждение, регистрация, ознакомление, поручение, или по сложному комплексному процессу</p>
 	</div>
 	<div class="box">
-		<p class="title"><img src="/bitrix/templates/kpd/images/icon-inter.jpg" /><span>Интеграция</span></p>
+		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-inter.jpg" /><span>Интеграция</span></p>
 		<p>Простой и бесшовный обмен данными с учетными решениями на платформе 1С:Предприятие: веб-сервисы, электронная почта, синхронизация данных, СВД (МЭДО).</p>
 	</div>
 	<div class="box">
-		<p class="title"><img src="/bitrix/templates/kpd/images/icon-pravo.jpg" /><span>Права доступа</span></p>
+		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-pravo.jpg" /><span>Права доступа</span></p>
 		<p>Политики доступа, грифы доступа, делегирование прав, передача прав подчиненных руководителям, шифрование файлов. </p>
 	</div>
 	<div class="box no-mr">
-		<p class="title"><img src="/bitrix/templates/kpd/images/icon-uprav.jpg" /><span>Управление договорами</span></p>
+		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-uprav.jpg" /><span>Управление договорами</span></p>
 		<p>Автозаполнение файла, внутреннее и внешнее согласование, контроль подписания, планирование исполнения, отслеживание, продление, расторжение договора, дополнительные соглашения.</p>
 	</div>
 </div>
@@ -98,7 +86,7 @@ $APPLICATION->SetTitle('1С КПД');
          </div>
 		</div>
 	<div class="phone">
-		<p>Возникли вопросы? <img src="/bitrix/templates/kpd/images/icon-phone.jpg" /> <span>+7 (499) <strong>638-34-03</strong></span></p>
+		<p>Возникли вопросы? <img src="/bitrix/templates/kpd/images/icon-phone.jpg" /> <span>+7 (495) <strong>640-00-93</strong></span></p>
 	</div>
 </div>
 <hr>
@@ -112,7 +100,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<img src="/bitrix/templates/kpd/images/icon-cup.jpg" />I место
 		</div>
 
-		<h1>Технологии внедрения «1С Документооборот»</h1>
+		<h1>Технологии внедрения «1С: Документооборот»</h1>
 
 		<div class="content">
 			<div class="box b1">
@@ -231,7 +219,7 @@ $APPLICATION->SetTitle('1С КПД');
 <!-- none -->
 <div class="container boxes form1">
 	<div class="content">
-		<p class="title">Получите в подарок новую книгу<br /> <span>«1С:Документооборот. 200 вопросов и ответов»</span> <br />или <span>просмотр записи мини-семинара</span><br /> по 1С:Документооборот для специалистов</p>
+		<p class="title">Получите в подарок новую книгу<br /> <span>«1С:Документооборот. 200 вопросов и ответов»</span> <br />или <span>просмотр записи мини-семинара<br /> по 1С:Документооборот для специалистов</span></p>
 		<form action="/ajax/form_send.php" method="post" data-type="form_send" enctype="application/x-www-form-urlencoded">
 			<div class="left">
 				<input type="text" name="name" placeholder="Имя">
@@ -353,7 +341,7 @@ $APPLICATION->SetTitle('1С КПД');
 <!-- none -->
 <div class="container boxes form2">
 	<div class="content">
-		<p class="title">Получите в подарок</p>
+		<p class="title">При заказе 1С:Документооборот в облаке получите в подарок</p>
 		<p>«1C:Электронное обучение. Работа с прикладным решением «1C:Документооборот» (облако)</p>
 		<form action="/ajax/form_send.php" method="post" data-type="receive_gift" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">
@@ -384,7 +372,7 @@ $APPLICATION->SetTitle('1С КПД');
 		<div class="box2">
 			<ul>
 				<li><span>1</span><p>Скидка на курсы в Учебном центре 1С-КПД – 20%</p></li>
-				<li><span>2</span><p>Книга «1С:Документооборот 200 вопросов и ответов» в подарок</p></li>
+				<li><span>2</span><p>Книга «1С:Документооборот. 200 вопросов и ответов» в подарок</p></li>
 				<li><span>3</span><p>Индивидуальная подписка на новости об изменениях в продукте, законода-<br />тельстве и отраслевых мероприятиях</p></li>
 				<li><span>4</span><p>Бесплатный доступ к электронному<br /> курсу «1С:Электронное обучение»</p></li>
 				<li><span>5</span><p>Бесплатный доступ к электронному<br /> курсу «Методология внедрения 1С:Документооборот»</p></li>
@@ -464,7 +452,7 @@ $APPLICATION->SetTitle('1С КПД');
 <!-- none -->
 <div class="container boxes form3">
 	<div class="content" id="kontakty">
-		<p>Оставьте заявку и мы свяжемся с Вами в ближайшее время</p>
+		<p>Оставьте заявку и мы свяжемся<br />с Вами в ближайшее время</p>
 		<form action="/ajax/form_send.php" method="post" data-type="contact_form" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">
 			<input type="text" name="phone" placeholder="Телефон">
