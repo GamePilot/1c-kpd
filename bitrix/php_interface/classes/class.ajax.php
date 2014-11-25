@@ -252,8 +252,8 @@ class ajax
 		
 		$this->mess = "Ok";
 		$this->send_ajax(array(
-			"month_price" => $price,
-			"price" => $price * $month
+			"month_price" => number_format(intval($price), 0, ' ', ' '),
+			"price" => number_format(intval($price * $month), 0, ' ', ' ')
 		));
 		
 		return true;		

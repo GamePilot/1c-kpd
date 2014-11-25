@@ -100,7 +100,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<img src="/bitrix/templates/kpd/images/icon-cup.jpg" />I место
 		</div>
 
-		<h1>Технологии внедрения «1С: Документооборот»</h1>
+		<h1>Технологии внедрения «1С:Документооборот»</h1>
 
 		<div class="content">
 			<div class="box b1">
@@ -451,7 +451,7 @@ $APPLICATION->SetTitle('1С КПД');
 <hr>
 <!-- none -->
 <div class="container boxes form3">
-	<div class="content" id="kontakty">
+	<div class="content">
 		<p>Оставьте заявку и мы свяжемся<br />с Вами в ближайшее время</p>
 		<form action="/ajax/form_send.php" method="post" data-type="contact_form" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">
@@ -467,6 +467,18 @@ $APPLICATION->SetTitle('1С КПД');
 			<textarea name="text" placeholder="Комментарий"></textarea>
 			<a href="#" class="button form">Отправить заявку</a>
 		</form>
+	</div>
+</div>
+<hr>
+<!-- none -->
+<div class="container boxes kontakty">
+	<div class="content" id="kontakty">
+		<p>ООО «1С-КПД»<br />
+			Телефон: +7 (495) 640-00-93<br />
+			Электронная почта: info@1c-kpd.ru<br />
+			Почтовый адрес: 127282, г. Москва, а/я 8<br />
+			Адрес офиса: 127018, Москва г, Сущевский Вал ул, дом № 47, строение 3, офис 306
+		</p>
 	</div>
 </div>
 <hr>

@@ -159,8 +159,8 @@ $(document).ready(function() {
 				ajax = data;
 				if(ajax.mess.length > 0)
 				{
-					$("a.service-cost").text(ajax.month_price + " рублей");
-					$("a.period-cost").text(ajax.price + " рублей");
+					$("a.service-cost").text(ajax.month_price);
+					$("a.period-cost").text(ajax.price);
 				}
 				else if (ajax.error.length > 0)
 				{
