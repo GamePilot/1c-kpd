@@ -58,7 +58,16 @@ $APPLICATION->SetTitle("1С-КПД");
 				<img src="/bitrix/templates/kpd/images/b1.png" />
 				<p class="title">ПРОФ</p>
 				<p>1С:Документооборот ПРОФ <br />рекомендуется для малых<br /> и средних организаций.</p>
-				<span>36 000 руб.</span>
+				<span>
+				<?$APPLICATION->IncludeFile(
+					"/include/price_left.php",
+					Array(),
+					Array(
+						"MODE" => "text", // будет редактировать в веб-редакторе
+						"NAME" => "Цена", // текст всплывающей подсказки на иконке
+						"TEMPLATE" => "" // имя шаблона для нового файла
+					)
+				);?> руб.</span>
 				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
 				<div class="clr"></div>
 			</div>
@@ -66,7 +75,16 @@ $APPLICATION->SetTitle("1С-КПД");
 				<img src="/bitrix/templates/kpd/images/b2.png" />
 				<p class="title">КОРП</p>
 				<p>1С:Документооборот КОРП<br /> подойдет крупным организациям <br />со сложной организационной структурой.</p>
-				<span>144 000 руб.</span>
+				<span>
+				<?$APPLICATION->IncludeFile(
+					"/include/price_center.php",
+					Array(),
+					Array(
+						"MODE" => "text", // будет редактировать в веб-редакторе
+						"NAME" => "Цена", // текст всплывающей подсказки на иконке
+						"TEMPLATE" => "" // имя шаблона для нового файла
+					)
+				);?> руб.</span>
 				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
 				<div class="clr"></div>
 			</div>
@@ -74,7 +92,17 @@ $APPLICATION->SetTitle("1С-КПД");
 				<img src="/bitrix/templates/kpd/images/b3.png" />
 				<p class="title">ДГУ</p>
 				<p>1С:Документооборот <br />государственного учреждения <br />предназначен для бюджетных учреждений.</p>
-				<span>117 600 руб.</span>
+				<span>
+				<?$APPLICATION->IncludeFile(
+					"/include/price_right.php",
+					"/include/price_right.php",
+					Array(),
+					Array(
+						"MODE" => "text", // будет редактировать в веб-редакторе
+						"NAME" => "Цена", // текст всплывающей подсказки на иконке
+						"TEMPLATE" => "" // имя шаблона для нового файла
+					)
+				);?> руб.</span>
 				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
 				<div class="clr"></div>
 			</div>
@@ -156,62 +184,83 @@ $APPLICATION->SetTitle("1С-КПД");
 			<p class="text2">Самостоятельное обучение</p>
 		<div class="box b1">
 			<p class="title">Мини-семинар по «1С:Документооборот» для специалистов</p>
-			<div class="inner bor">
-				<div class="img">
-					<img src="/bitrix/templates/kpd/images/icon-time-2.png" title="" alt="" />
-				</div>
-				<p>Длительность курса:<br /><span>4 академических часа</span></p>
-			</div>
-			<div class="inner bor">
-				<div class="img">
-					<img src="/bitrix/templates/kpd/images/icon-calendar-2.png" title="" alt="" />
-				</div>
-				<p>Ближайшие даты проведения:<br /><span>любые</span></p>
-			</div>
-			<div class="inner">
-				<div class="img">
-					<img src="/bitrix/templates/kpd/images/icon-money-2.png" title="" alt="" />
-				</div>
-				<p>Стоимость: <span>2 000 руб - посмотреть в записи</span></p>
-			</div>
+			<?$APPLICATION->IncludeFile(
+				"/include/inc_left.php",
+				Array(),
+				Array(
+					"MODE" => "html", // будет редактировать в веб-редакторе
+					"NAME" => "Описание", // текст всплывающей подсказки на иконке
+					"TEMPLATE" => "" // имя шаблона для нового файла
+				)
+			);?>
 			<p class="text">Курс по 1С:Документооборот для продвинутых слушателей. Знакомит со сложными настройками программы.</p>
 			<div class="bottom">
-				<p>Осталось мест - <span class="blue">5</span></p>
+				<p>Осталось мест -
+					<?$APPLICATION->IncludeFile(
+						"/include/num_left.php",
+						Array(),
+						Array(
+							"MODE" => "html", // будет редактировать в веб-редакторе
+							"NAME" => "Число", // текст всплывающей подсказки на иконке
+							"TEMPLATE" => "" // имя шаблона для нового файла
+						)
+					);?>
+				</p>
 				<a href="http://www.elektronnij-dokumentooborot.1c-kpd.ru/uchebnyi-centr/zapisatsa/form.php?kurs=106" target="_blank" class="button">Записаться</a>
 				<div class="clr"></div>
 			</div>
 		</div>
 		<div class="box b2">
 			<p class="title">Возможности прикладного решения «1С:Документооборот»</p>
-			<div class="inner bor">
-				<div class="img">
-					<img src="/bitrix/templates/kpd/images/icon-time-2.png" title="" alt="" />
-				</div>
-				<p>Длительность курса:<br /><span>3 дня</span></p>
-			</div>
-			<div class="inner bor">
-				<div class="img">
-					<img src="/bitrix/templates/kpd/images/icon-calendar-2.png" title="" alt="" />
-				</div>
-				<p>Ближайшие даты проведения:<br /><span>любые</span></p>
-			</div>
-			<div class="inner">
-				<div class="img">
-					<img src="/bitrix/templates/kpd/images/icon-money-2.png" title="" alt="" />
-				</div>
-				<p>Стоимость:<span>16 000 руб. - посмотреть в записи</span></p>
-			</div>
+			<?$APPLICATION->IncludeFile(
+				"/include/inc_center.php",
+				Array(),
+				Array(
+					"MODE" => "html", // будет редактировать в веб-редакторе
+					"NAME" => "Описание", // текст всплывающей подсказки на иконке
+					"TEMPLATE" => "" // имя шаблона для нового файла
+				)
+			);?>
 			<p class="text">Базовый курс по 1С:Документооборот для пользователей и специалистов, начинающих работать с программой.</p>
 			<div class="bottom">
-				<p>Осталось мест - <span class="red">5</span></p>
+				<p>Осталось мест - 
+					<?$APPLICATION->IncludeFile(
+						"/include/num_center.php",
+						Array(),
+						Array(
+							"MODE" => "html", // будет редактировать в веб-редакторе
+							"NAME" => "Число", // текст всплывающей подсказки на иконке
+							"TEMPLATE" => "" // имя шаблона для нового файла
+						)
+					);?>
+				</p>
 				<a href="http://www.elektronnij-dokumentooborot.1c-kpd.ru/uchebnyi-centr/zapisatsa/form.php?kurs=97" target="_blank" class="button">Записаться</a>
 				<div class="clr"></div>
 			</div>
 		</div>
 		<div class="box b3">
 			<p class="title"><strong>Наименование:</strong> <u>«1C:Электронное обучение. Работа с прикладным решением» «1C:Документооборот» (облако)</u></p>
-			<p class="title"><strong>Описание:</strong> Электронный аналог <u>очного курса</u><br><strong>Возможности прикладного решения «1С:Документооборот»</strong><br><br></p>
-			<p class="price">30 000 руб.</p>
+			<p class="title"><strong>
+			<?$APPLICATION->IncludeFile(
+				"/include/inc_right.php",
+				Array(),
+				Array(
+					"MODE" => "html", // будет редактировать в веб-редакторе
+					"NAME" => "Описание", // текст всплывающей подсказки на иконке
+					"TEMPLATE" => "" // имя шаблона для нового файла
+				)
+			);?>
+			</p>
+			<p class="price">
+			<?$APPLICATION->IncludeFile(
+				"/include/inc_price.php",
+				Array(),
+				Array(
+					"MODE" => "text", // будет редактировать в веб-редакторе
+					"NAME" => "Цена", // текст всплывающей подсказки на иконке
+					"TEMPLATE" => "" // имя шаблона для нового файла
+				)
+			);?> руб.</p>
 			<a href="/ajax/request_call.php" class="ajax button">Оставить заявку</a>
 			</div>
 		</div>
