@@ -72,6 +72,13 @@ class ajax
 					"email" => "Неверный формат E-mail"
 				));
 				break;
+			case "demo_version": // Заказ демо версии
+				$this->demo_version(array(
+					"name" => "Введите свое имя",
+					"phone" => "Неверный формат номера",
+					"email" => "Неверный формат E-mail"
+				));
+				break;
 			case "get_timer": // Получить секунды для таймера
 				$this->get_timer();
 				break;
@@ -274,6 +281,34 @@ class ajax
 
 		// Отправка на емаил
 		$messID = CEvent::Send("SEND_RATE", "s1", $this->request, "N");
+		if($messID > 0){
+			$this->mess = "Ваша заявка отправлена";
+			$this->send_ajax();
+		} else {
+			$this->error = "Заявку отправить не удалось";
+			$this->send_ajax();
+			return false;
+		}
+
+
+		return true;
+	}
+
+	/**
+	 * Заказ демо версии
+	 * @param $arFieldsError - массив обязательных полей
+	 * @return bool
+	 */
+	public function demo_version($arFieldsError)
+	{
+		// Проверка полей		
+		$this->phone($this->request["phone"], "phone"); // Проверка телефона
+		$this->email($this->request["email"], "email"); // Проверка email
+		if(!$this->field_check($arFieldsError))
+			return false;
+
+		// Отправка на емаил
+		$messID = CEvent::Send("DEMO_VERSION", "s1", $this->request, "N");
 		if($messID > 0){
 			$this->mess = "Ваша заявка отправлена";
 			$this->send_ajax();

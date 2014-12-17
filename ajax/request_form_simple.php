@@ -12,7 +12,7 @@
 		
 		<input type="hidden" name="rate" value="<?=$_GET["rate"]?>">
  
-		<p class="info-b no-br"><span>*</span> - Поля, обязательны к заполнению</p>
+		<p class="info-b no-br"><span>*</span> - Поля, обязательные для заполнения</p>
 
 		<a href="#" class="button modal">Отправить заявку</a>
 	</form>

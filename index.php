@@ -1,9 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('1С КПД');
-?>
-
-<!-- slider -->
+$APPLICATION->SetTitle("1С-КПД");
+?><!-- slider -->
 <div id="slideshow">
 	<div id="slidesContainer">
 		<div class="slide sl1">
@@ -36,7 +34,7 @@ $APPLICATION->SetTitle('1С КПД');
 	</div>
 	<div class="box">
 		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-businnes.jpg" /><span>Бизнес-процессы</span></p>
-		<p>Отправка документов возможна по простым маршрутам: рассмотрение, исполнение, согласование, утверждение, регистрация, ознакомление, поручение, или по сложному комплексному процессу</p>
+		<p>Отправка документов возможна по простым маршрутам: рассмотрение, исполнение, согласование, утверждение, регистрация, ознакомление, поручение: или по сложному комплексному процессу.</p>
 	</div>
 	<div class="box">
 		<p class="title pad-top"><img src="/bitrix/templates/kpd/images/icon-inter.jpg" /><span>Интеграция</span></p>
@@ -59,7 +57,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<div class="box b1">
 				<img src="/bitrix/templates/kpd/images/b1.png" />
 				<p class="title">ПРОФ</p>
-				<p>1С:Документооборот ПРОФ рекомендуется для малых и средних организаций.</p>
+				<p>1С:Документооборот ПРОФ <br />рекомендуется для малых<br /> и средних организаций.</p>
 				<span>36 000 руб.</span>
 				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
 				<div class="clr"></div>
@@ -67,7 +65,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<div class="box b2">
 				<img src="/bitrix/templates/kpd/images/b2.png" />
 				<p class="title">КОРП</p>
-				<p>1С:Документооборот КОРП подойдет крупным организациям со сложной организационной структурой.</p>
+				<p>1С:Документооборот КОРП<br /> подойдет крупным организациям <br />со сложной организационной структурой.</p>
 				<span>144 000 руб.</span>
 				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
 				<div class="clr"></div>
@@ -75,7 +73,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<div class="box b3">
 				<img src="/bitrix/templates/kpd/images/b3.png" />
 				<p class="title">ДГУ</p>
-				<p>1С:Документооборот государственного учреждения предназначен для бюджетных учреждений.</p>
+				<p>1С:Документооборот <br />государственного учреждения <br />предназначен для бюджетных учреждений.</p>
 				<span>117 600 руб.</span>
 				<a href="/ajax/request_call.php" class="ajax button">Купить</a>
 				<div class="clr"></div>
@@ -86,7 +84,11 @@ $APPLICATION->SetTitle('1С КПД');
          </div>
 		</div>
 	<div class="phone">
-		<p>Возникли вопросы? <img src="/bitrix/templates/kpd/images/icon-phone.jpg" /> <span>+7 (495) <strong>640-00-93</strong></span></p>
+		<p>Возникли вопросы? <img src="/bitrix/templates/kpd/images/icon-phone.jpg" /> <span>
+    <?php Bitrix\Main\Page\Frame::getInstance()->startDynamicWithID("top_phone"); ?>
+    +7 <?if($_SESSION['PHONE']){echo $_SESSION['PHONE'];}else{?>(495) 640-00-93<?}?>
+    <?php Bitrix\Main\Page\Frame::getInstance()->finishDynamicWithID("top_phone", "(495) 640-00-93"); ?>
+</span></p>
 	</div>
 </div>
 <hr>
@@ -95,9 +97,9 @@ $APPLICATION->SetTitle('1С КПД');
 	<div class="content" id="vnedrenie">
 		<h1>ВНЕДРЕНИЕ</h1>
 		<img src="/bitrix/templates/kpd/images/line-3.png" class="line-3" />
-		<p class="small">1С-КПД является центром компетенции по документуобороту<br /> (1С:ЦКД) и занимем в нём</p>
+		<p class="small">1С-КПД является центром компетенции по документообороту<br /> (1С:ЦКД) и занимает в нём</p>
 		<div class="icon-cup">
-			<img src="/bitrix/templates/kpd/images/icon-cup.jpg" />I место
+			<a href="http://www.1c.ru/rus/partners/ckd.jsp" style="color:#89898c; text-decoration:none;" target="_blank"><img src="/bitrix/templates/kpd/images/icon-cup.jpg" />I место</a>
 		</div>
 
 		<h1>Технологии внедрения «1С:Документооборот»</h1>
@@ -164,17 +166,17 @@ $APPLICATION->SetTitle('1С КПД');
 				<div class="img">
 					<img src="/bitrix/templates/kpd/images/icon-calendar-2.png" title="" alt="" />
 				</div>
-				<p>Ближайшие даты проведения:<br /><span>31 октября</span></p>
+				<p>Ближайшие даты проведения:<br /><span>любые</span></p>
 			</div>
 			<div class="inner">
 				<div class="img">
 					<img src="/bitrix/templates/kpd/images/icon-money-2.png" title="" alt="" />
 				</div>
-				<p>Стоимость:<span>1 500 руб. - очно,<br />1 000 руб. - дистанционно,<br />2 000 руб - посмотреть в записи</span></p>
+				<p>Стоимость: <span>2 000 руб - посмотреть в записи</span></p>
 			</div>
 			<p class="text">Курс по 1С:Документооборот для продвинутых слушателей. Знакомит со сложными настройками программы.</p>
 			<div class="bottom">
-				<p>Осталось мест - <span class="blue">10</span></p>
+				<p>Осталось мест - <span class="blue">5</span></p>
 				<a href="http://www.elektronnij-dokumentooborot.1c-kpd.ru/uchebnyi-centr/zapisatsa/form.php?kurs=106" target="_blank" class="button">Записаться</a>
 				<div class="clr"></div>
 			</div>
@@ -191,25 +193,25 @@ $APPLICATION->SetTitle('1С КПД');
 				<div class="img">
 					<img src="/bitrix/templates/kpd/images/icon-calendar-2.png" title="" alt="" />
 				</div>
-				<p>Ближайшие даты проведения:<br /><span>17 - 19 ноября</span></p>
+				<p>Ближайшие даты проведения:<br /><span>любые</span></p>
 			</div>
 			<div class="inner">
 				<div class="img">
 					<img src="/bitrix/templates/kpd/images/icon-money-2.png" title="" alt="" />
 				</div>
-				<p>Стоимость:<span>10 000 руб.- очно, <br />8 000 руб.- дистанционно, <br />16 000 руб. - посмотреть в записи</span></p>
+				<p>Стоимость:<span>16 000 руб. - посмотреть в записи</span></p>
 			</div>
 			<p class="text">Базовый курс по 1С:Документооборот для пользователей и специалистов, начинающих работать с программой.</p>
 			<div class="bottom">
-				<p>Осталось мест - <span class="red">1</span></p>
+				<p>Осталось мест - <span class="red">5</span></p>
 				<a href="http://www.elektronnij-dokumentooborot.1c-kpd.ru/uchebnyi-centr/zapisatsa/form.php?kurs=97" target="_blank" class="button">Записаться</a>
 				<div class="clr"></div>
 			</div>
 		</div>
 		<div class="box b3">
-			<p class="title"><strong>Наименование:</strong> <u>«1C:Электронное обучение. Работа с прикладным решением» «1C:Документооборот» (коробка / облако)</u></p>
-			<p class="title"><strong>Описание:</strong> Электронный аналог <u>очного курса</u><br /><strong>Возможности прикладного решения «1С:Документооборот»</strong><br /><br /><br /></p>
-			<p class="price">30 000 / 8 000 руб.</p>
+			<p class="title"><strong>Наименование:</strong> <u>«1C:Электронное обучение. Работа с прикладным решением» «1C:Документооборот» (облако)</u></p>
+			<p class="title"><strong>Описание:</strong> Электронный аналог <u>очного курса</u><br><strong>Возможности прикладного решения «1С:Документооборот»</strong><br><br></p>
+			<p class="price">30 000 руб.</p>
 			<a href="/ajax/request_call.php" class="ajax button">Оставить заявку</a>
 			</div>
 		</div>
@@ -291,7 +293,7 @@ $APPLICATION->SetTitle('1С КПД');
 <div class="container boxes docstore saas" id="saas">
 	<h1>SaaS (аренда 1С:Документооборот)</h1>
 	<img src="/bitrix/templates/kpd/images/line-2.png">
-	<p>Виртуальный сервер, полностью настроенный для оптимальной работы с продуктами<br /> «1С:Документооборот» и готовый к немедленному использованию.</p>
+	<p>Виртуальный сервер, полностью настроенный для оптимальной работы с системой<br /> «1С:Документооборот» и готовый к немедленному использованию.</p>
 	<div class="inner">
 		<div class="left">
 			<p>Преимущества:</p>
@@ -307,7 +309,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<p>Расчет стоимости услуги</p>
 			<form action="/ajax/form_send.php" method="post" id="count_service_cost" data-type="calculator">     
 				<div class="row">
-					<label>Колличество пользователей:</label><input value="1" type="text" name="user_count" >
+					<label>Количество пользователей:</label><input value="1" type="text" name="user_count" >
 				</div>
 				<div class="row">
 					<label>Период оплаты (мес):</label>
@@ -334,7 +336,7 @@ $APPLICATION->SetTitle('1С КПД');
 		<img src="/bitrix/templates/kpd/images/bg-expert.jpg" />
 		<p>Документооборот в облаке— это полноценное решение 1С:Документооборот, которое включает все возможности системы за меньшие деньги.</p>
 		<p>Хранить документы в облаке — абсолютно безопасно, каналы связи защищены по протоколу https, доступ к серверам хранения данных защищен и ограничен разграничением прав доступа и персональными паролями.</p>
-		<p>Работа с системой возможна из любого места где есть интернет: из офиса, из дома, в командировке и отпуске. 1С:Документооборот работает на мобильных устройствах, таких как iPad.</p>
+		<p>Работа с системой возможна из любого места, где есть интернет: из офиса, из дома, в командировке и отпуске. 1С:Документооборот работает на мобильных устройствах, таких как iPad.</p>
 	</div>
 </div>
 <hr>
@@ -398,7 +400,7 @@ $APPLICATION->SetTitle('1С КПД');
 			<tbody>
 				<tr class="bg">
 					<td class="left">
-						<strong>Удаленная техническая поддержка</strong> Весь спектр услуг: от решения проблемы в режиме «вопрос-ответ» до удаленного подключения к рабочему столу пользователя. Кроме услуг по програмированию.
+						<strong>Удаленная техническая поддержка</strong> Весь спектр услуг: от решения проблемы в режиме «вопрос-ответ» до удаленного подключения к рабочему столу пользователя. Кроме услуг по программированию.
 					</td>
 					<td>4 часа</td>
 					<td>1 часа</td>
@@ -413,7 +415,7 @@ $APPLICATION->SetTitle('1С КПД');
 					<td><img src="/bitrix/templates/kpd/images/check.png" /></td>
 				</tr>
 				<tr class="bg">
-					<td class="left"><strong>Работы специалиста</strong>Все виды услуг: от решения проблемы в режиме «вопрос-ответ» до удаленного подключения к рабочему столу пользователя. Кроме услуг по програмированию.</td>
+					<td class="left"><strong>Работы специалиста</strong>Все виды услуг: от решения проблемы в режиме «вопрос-ответ» до удаленного подключения к рабочему столу пользователя. Кроме услуг по программированию.</td>
 					<td><img src="/bitrix/templates/kpd/images/no-check.png" /></td>
 					<td>4 часа</td>
 					<td>8 часа</td>
@@ -452,7 +454,7 @@ $APPLICATION->SetTitle('1С КПД');
 <!-- none -->
 <div class="container boxes form3">
 	<div class="content">
-		<p>Оставьте заявку и мы свяжемся<br />с Вами в ближайшее время</p>
+		<p>Оставьте заявку, и мы свяжемся<br />с Вами в ближайшее время</p>
 		<form action="/ajax/form_send.php" method="post" data-type="contact_form" enctype="application/x-www-form-urlencoded">
 			<input type="text" name="name" placeholder="Имя">
 			<input type="text" name="phone" placeholder="Телефон">
@@ -474,7 +476,11 @@ $APPLICATION->SetTitle('1С КПД');
 <div class="container boxes kontakty">
 	<div class="content" id="kontakty">
 		<p>ООО «1С-КПД»<br />
-			Телефон: +7 (495) 640-00-93<br />
+			Телефон: 
+    <?php Bitrix\Main\Page\Frame::getInstance()->startDynamicWithID("top_phone"); ?>
+    +7 <?if($_SESSION['PHONE']){echo $_SESSION['PHONE'];}else{?>(495) 640-00-93<?}?>
+    <?php Bitrix\Main\Page\Frame::getInstance()->finishDynamicWithID("top_phone", "(495) 640-00-93"); ?>
+  <br />
 			Электронная почта: info@1c-kpd.ru<br />
 			Почтовый адрес: 127282, г. Москва, а/я 8<br />
 			Адрес офиса: 127018, Москва г, Сущевский Вал ул, дом № 47, строение 3, офис 306

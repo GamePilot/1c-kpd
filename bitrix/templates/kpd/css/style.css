@@ -62,7 +62,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 
 .ver-prod .content .box { background: #fff; border: 1px solid #E6E6E6; margin-bottom: 20px; width: 305px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 20px 15px; vertical-align: top;}
 .ver-prod .content .box.b1 {}
-.ver-prod .content .box.b1 img, .ver-prod .content .box.b2 img, .ver-prod .content .box.b3 img { position: absolute; margin: -22px 0 0 190px;}
+.ver-prod .content .box.b1 img, .ver-prod .content .box.b2 img, .ver-prod .content .box.b3 img { position: absolute; margin: -22px 0 0 167px;}
 .ver-prod .content .box.b2 { margin: 0 0 0 -5px; border-left: 1px dashed #E5E5E5;}
 .ver-prod .content .box.b3 { margin-left: 20px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
 .ver-prod .content .box p.title { font-size: 15px; line-height: 22px; color: #58585a; font-weight: 700; text-transform: uppercase; margin: 10px 0 15px; height: auto;}
@@ -230,7 +230,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 .saas .inner .right form .row { display: block; margin: 15px 0;}
 .saas .inner .right form label { font-size: 13px; line-height: 22px; color:#58585a; text-align: right; width: 285px; display: inline-block;}
 .saas .inner .right form input, .saas .inner .right form select { border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; width: 90px; padding: 7px 10px; font-size: 12px; font-weight: 700; margin: 0 0 0 10px; text-align: center;}
-.saas .inner .right form select { margin-left: 7px; width: 93px; text-indent: 25px; text-align: left;}
+.saas .inner .right form select { margin-left: 7px; width: 93px;}
 .saas .inner .right form .line { border-top: 1px solid #DEDEDE; width: 390px; margin-left: 40px;}
 .saas .inner .right form a.period-cost, .saas .inner .right form a.service-cost {border: 1px solid #E6E6E6; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #fff; width: 90px; height: 30px; line-height: 30px; font-size: 12px; font-weight: 700; margin: 0 0 0 10px; text-align: center; display: inline-block;}
 .saas .inner .right form .row span, .saas .inner .right form .row span { padding-left: 10px;}
@@ -280,9 +280,7 @@ a.button:hover { background: #40B2E0; border: 1px solid #3FA6CE;}
 
 
 
-/*-- Контакты --*/
-.kontakty {}
-.kontakty p { text-align: left; font-size: 13px; line-height: 18px; color: #58585a;}
+
 
 
 /*-- Оставьте заявку --*/

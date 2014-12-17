@@ -2,7 +2,42 @@
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 ?>
+<?
+$uri_indication['yandex'] = "utm_source=yandex_direkt";
+$uri_indication['yandex2'] = "utm_source=yandex";
+$uri_indication['google'] = "utm_source=google_adwords";
+$uri_indication['google2'] = "utm_source=google";
+$uri_indication['yclid'] = 'yclid';
+$uri_indication['gclid'] = 'gclid';
+$uri_indication['youtube'] = "utm_source=youtube";
 
+if(strpos($_SERVER['REQUEST_URI'], $uri_indication['yandex']) || strpos($_SERVER['REQUEST_URI'], $uri_indication['yclid']) || strpos($_SERVER['REQUEST_URI'], $uri_indication['yandex2'])){
+  $source_type = "yad";
+  $_SESSION['PHONE'] = '(499) <strong>638-34-55</strong>';
+}elseif(strpos($_SERVER['REQUEST_URI'], $uri_indication['google']) || strpos($_SERVER['REQUEST_URI'], $uri_indication['gclid']) || strpos($_SERVER['REQUEST_URI'], $uri_indication['google2'])) {
+  $source_type = "gad";
+  $_SESSION['PHONE'] = '(499) <strong>638-34-05</strong>';
+}elseif(strpos($_SERVER['HTTP_REFERER'], 'yandsearch')){
+  $source_type = "yas";
+  $_SESSION['PHONE'] = '(499) <strong>638-34-03</strong>';
+}elseif(strpos($_SERVER['HTTP_REFERER'], 'www.google.')){
+  $source_type = "gs";
+  $_SESSION['PHONE'] = '(499) <strong>638-34-89</strong>';
+}elseif(strpos($_SERVER['HTTP_REFERER'], 'facebook')){
+  $source_type = "fb";
+  $_SESSION['PHONE'] = '(499) <strong>638-34-01</strong>';
+}elseif(strpos($_SERVER['REQUEST_URI'], $uri_indication['youtube']) || strpos($_SERVER['HTTP_REFERER'], 'youtube')){
+  $_SESSION['PHONE'] = '(499) <strong>638-34-02</strong>';
+}else{
+ 
+  if( $_SESSION['PHONE']=='(499) <strong>638-34-55</strong>' || $_SESSION['PHONE']=='(499) <strong>638-34-05</strong>' || $_SESSION['PHONE']=='(499) <strong>638-34-03</strong>' || $_SESSION['PHONE']=='(499) <strong>638-34-89</strong>' || $_SESSION['PHONE']=='(499) <strong>638-34-01</strong>' || $_SESSION['PHONE']=='(499) <strong>638-34-02</strong>'){
+      
+  }else{
+    $_SESSION['PHONE'] = '(495) <strong>640-00-93</strong>';
+  }
+  
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -113,7 +148,11 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 
 
+
+
 {Page Text}
+
+
 
 
 
@@ -137,5 +176,51 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<a href="#"><img src="/bitrix/templates/kpd/images/vverh.png" alt="Наверх" title="Наверх" /></a>
 	</div>
 </div>
+
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=27423332&amp;from=informer"
+   target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/27423332/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+									   style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:27423332,lang:'ru'});return false}catch(e){}"/></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter27423332 = new Ya.Metrika({id:27423332,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/27423332" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!--Google analytics-->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-57494022-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>

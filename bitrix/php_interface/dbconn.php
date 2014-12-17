@@ -1,10 +1,10 @@
-<?
+<?define("BX_CRONTAB_SUPPORT", true);?><?
 define("DBPersistent", false);
 $DBType = "mysql";
 $DBHost = "localhost";
-$DBLogin = "com3dbite_kpd";
-$DBPassword = "vWW9jdaus";
-$DBName = "com3dbite_kpd";
+$DBLogin = "1cdocrf";
+$DBPassword = "Vlush1CDoC1904243";
+$DBName = "1cdocrf";
 $DBDebug = false;
 $DBDebugToFile = false;
 define("MYSQL_TABLE_TYPE", "INNODB");

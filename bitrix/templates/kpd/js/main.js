@@ -134,7 +134,11 @@ $(document).ready(function() {
 	
 	get_calc_price(user_count, pay_period);
 	
-	user_count_obj.keyup(function(){
+	$("form").submit(function(e){
+		e.preventDefault();
+	});
+	
+	user_count_obj.keyup(function(e){
 		user_count = $(this).val();
 		get_calc_price(user_count, pay_period);
 	});
@@ -168,8 +172,8 @@ $(document).ready(function() {
 					for (var input_name in ajax.error_keys){
 						form.find("input[name=" + input_name + "]").addClass("error");
 					}
-					$("a.service-cost").text("none");
-					$("a.period-cost").text("none");
+					$("a.service-cost").text("-");
+					$("a.period-cost").text("-");
 				}
 			},
 			error: function(){
